@@ -1,0 +1,919 @@
+<SpecialStructures>
+
+    <SpecialStructure Name="T_Generic_Shipyard">
+        <Variant_Of_Existing_Type>Orbital_Structure_Template</Variant_Of_Existing_Type>
+        <Space_Model_Name>SB_KDY_Shipyard.ALO</Space_Model_Name>
+        <Scale_Factor>1.0</Scale_Factor>
+        <GUI_Row> 0 </GUI_Row>
+        <Select_Box_Scale>330</Select_Box_Scale>
+        <Select_Box_Z_Adjust>-30</Select_Box_Z_Adjust>
+        <Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+
+        <AI_Combat_Power>1000</AI_Combat_Power>
+        <Tactical_Health>10000</Tactical_Health>
+        <Shield_Points>9500</Shield_Points>
+        <Shield_Refresh_Rate>21.11</Shield_Refresh_Rate>
+        <Energy_Capacity>9500</Energy_Capacity>
+        <Energy_Refresh_Rate>21.11</Energy_Refresh_Rate>
+        <Damage>234</Damage>
+        <Autoresolve_Health>17500</Autoresolve_Health>
+        <Space_FOW_Reveal_Range>1000.0</Space_FOW_Reveal_Range>
+        <Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+        <Targeting_Max_Attack_Distance>5000.0</Targeting_Max_Attack_Distance>
+
+        <Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_LARGE
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+        </Encyclopedia_Text>
+
+        <GUI_Model_Name>SB_KDY_Shipyard.ALO</GUI_Model_Name>
+        <GUI_Distance>1000</GUI_Distance>
+        <GUI_Offset>0 0 0</GUI_Offset>
+        <GUI_Velocity>45</GUI_Velocity>
+
+        <CategoryMask> SpaceStructure </CategoryMask>
+
+        <Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Radar_Icon_Size>0.1  0.1</Radar_Icon_Size>
+        <Radar_Icon_Name>I_Radar_KDY_Yard.tga</Radar_Icon_Name>
+        <Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+
+        <GUI_Bracket_Size>2</GUI_Bracket_Size>
+        <Custom_Soft_Footprint_Radius> 200 </Custom_Soft_Footprint_Radius>
+        <Reinforcement_Prevention_Radius> 4000 </Reinforcement_Prevention_Radius>
+        <Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset>
+        <Spawned_Squadron_Delay_Seconds>30</Spawned_Squadron_Delay_Seconds>
+        <Victory_Relevant>No</Victory_Relevant>
+
+        <Armor_Type> Armor_Space_Medium </Armor_Type>
+        <Shield_Armor_Type>Shield_Space_Balanced_Capital</Shield_Armor_Type>
+
+        <Land_Damage_Thresholds>1, 0.5, 0.25</Land_Damage_Thresholds>
+        <Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+        <Land_Damage_SFX>null,Unit_Hardpoint_Ion_Death, Unit_Hardpoint_Ion_Death, Unit_Hardpoint_Ion_Death</Land_Damage_SFX>
+
+    </SpecialStructure>
+
+
+    <SpecialStructure Name="Mandalore_Planetary_Defense">
+        <Variant_Of_Existing_Type>T_Generic_Shipyard</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SHIPYARD_MANDAL</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_LARGE
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_MANDAL_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_MANDAL_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_SPEED_UP_PRODUCTION_MANDALORE
+            AOTR_UPKEEP_60
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        
+        <Icon_Name>I_BUTTON_SHIPYARD_MANDAL.tga</Icon_Name>
+
+        <Affiliation>Underworld, Warlords</Affiliation>
+        <Build_Cost_Credits>8000</Build_Cost_Credits>
+        <Score_Cost_Credits> 600 </Score_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+        <Required_Planets>Mandalore, Mandalore_Web, Mandalore_Big</Required_Planets>
+        <Population_Value>3</Population_Value>
+
+        
+        <SFXEvent_Build_Started>UHD_Build_Structure</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Building_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>UHD_Construction_Complete</SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Unit_Under_Attack> RHD_Scanner_Under_Attack </SFXEvent_Unit_Under_Attack>
+        <SFXEvent_Unit_Lost />
+        <SFXEvent_Select> Structure_Scanner_Select_SFX </SFXEvent_Select>
+    
+        <HardPoints>
+            HP_Rebel_Large_Shipyard_Hangar_01,
+            HP_Rebel_Large_Shipyard_Hangar_02,
+            HP_Rebel_Large_Shipyard_Hangar_03,
+            HP_Rebel_Large_Shipyard_Shield_01,
+            HP_MandalMotors_Shipyard_laser_01,
+            HP_MandalMotors_Shipyard_laser_02,
+            HP_MandalMotors_Shipyard_laser_03,
+            HP_MandalMotors_Shipyard_laser_04,
+            HP_MandalMotors_Shipyard_Missile_01,
+            HP_MandalMotors_Shipyard_Missile_02,
+            HP_MandalMotors_Shipyard_PD_01,
+            HP_MandalMotors_Shipyard_PD_02,
+            HP_MandalMotors_Shipyard_PD_03,
+            HP_MandalMotors_Shipyard_PD_04,
+            HP_Large_Shipyard_Hull_Dummy,
+            HP_Large_Shipyard_Hull,
+            HP_Large_Shipyard_Mandalore_Symbol
+        </HardPoints>
+
+        
+
+        <Starting_Spawned_Units_Tech_0>N_Fang_Fighter_S, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>N_Fang_Fighter_S, 3</Reserve_Spawned_Units_Tech_0>
+
+        <Starting_Spawned_Units_Tech_0>Mandalore_Defense_Fleet, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Mandalore_Defense_Fleet, 0</Reserve_Spawned_Units_Tech_0>
+
+        <Abilities SubObjectList="Yes">
+            <Planet_Income_Bonus_Ability Name="Structure_Upkeep">
+                
+                
+                <Percentage_Income_Modifier>0.0</Percentage_Income_Modifier>
+                
+                <Absolute_Income_Modifier>-60</Absolute_Income_Modifier>
+                
+                <Additional_Multiplier_On_Mining_Colonies>0.0</Additional_Multiplier_On_Mining_Colonies>
+                
+            </Planet_Income_Bonus_Ability>
+            <Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>12.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected />
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type />
+                <Owner_Light_Effect_Color />
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration />
+                <Owner_Light_Effect_Pulse_Count />
+            </Force_Healing_Ability>
+            <Force_Healing_Ability Name="Repair_Facility_Healing">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>2000.0</Heal_Range>
+                <Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+                <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+                
+                <Applicable_Unit_Categories>Gunship, Corvette, Frigate, Cruiser, Capital</Applicable_Unit_Categories>
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+            </Force_Healing_Ability>
+            <Reduce_Production_Time_Ability Name="Mandalore_Shipyard_Production_Time_Reduction">
+                <Unit_Strength_Category />
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types>
+					U_Crusader_Gunship,
+					U_StarViper_S,
+					N_Fang_Fighter_S,
+					R_Fang_Fighter_S,
+					U_Fang_Fighter_S,
+					E_Fang_Fighter_S,
+					N_Scyk_Fighter_S,
+					U_Scyk_Fighter_S,
+					N_Dunelizard_S,
+					U_Dunelizard_S,
+					N_Kimogila_S,
+					U_Kimogila_S,
+					N_Warlord_Gunship_S,
+					U_Warlord_Gunship_S,
+					N_Krayt_Gunship_S,
+					U_Krayt_Gunship_S,
+					U_Lictor_Dungeon_Ship,
+					U_Keldabe_Battleship,
+					U_Kandosii_Dreadnaught,
+					U_Aggressor_Destroyer,
+					U_Vengeance_Frigate
+                </Applicable_Unit_Types>
+                <Excluded_Unit_Types />
+                <Time_Reduction_Percentage>0.2</Time_Reduction_Percentage>
+                <Stacking_Category>10</Stacking_Category>
+                <Galaxy_Wide> No </Galaxy_Wide>
+            </Reduce_Production_Time_Ability>
+        </Abilities>
+
+    </SpecialStructure>
+
+    <SpaceUnit Name="Mandalore_Planetary_Defense_ORBITAL_DUMMY">
+        <Variant_Of_Existing_Type>Orbital_Dummy_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SHIPYARD_MANDAL</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_LARGE
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_MANDAL_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_MANDAL_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_UPKEEP_120
+        </Encyclopedia_Text>
+
+        <Icon_Name>I_BUTTON_SHIPYARD_MANDAL.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="DELETE_STRUCTURE_Mandalore_Planetary_Defense">
+        <Variant_Of_Existing_Type>DELETE_STRUCTURE_TEMPLATE</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_DELETE_PLANETARY_DEFENSE_MANDALORE</Text_ID>
+        <Required_Special_Structures>Mandalore_Planetary_Defense</Required_Special_Structures>
+        <Affiliation>Underworld</Affiliation>
+        <Tech_Level>0</Tech_Level>
+        <Icon_Name>I_BUTTON_SHIPYARD_MANDAL_DEMO.tga</Icon_Name>
+    </SpaceUnit>
+
+
+    <SpecialStructure Name="CorSec_Planetary_Defense">
+        <Variant_Of_Existing_Type>T_Generic_Shipyard</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SHIPYARD_CORSEC</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_LARGE
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_CORSEC_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_CORSEC_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_SPEED_UP_PRODUCTION_CEC
+            AOTR_UPKEEP_60
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_SHIPYARD_CORSEC.tga</Icon_Name>
+        <Affiliation>Rebel,Pirates,Underworld,CSA,Hutts,Warlords,Hapans</Affiliation>
+        <Build_Cost_Credits>8000</Build_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+        <Population_Value>3</Population_Value>
+        <Required_Planets>Corellia, Corellia_Web, Corellia_Big</Required_Planets>
+        <SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Unit_Under_Attack> RHD_Scanner_Under_Attack </SFXEvent_Unit_Under_Attack>
+        <SFXEvent_Unit_Lost> RHD_Scanner_Destroyed </SFXEvent_Unit_Lost>
+        <SFXEvent_Select> Structure_Scanner_Select_SFX </SFXEvent_Select>
+       
+        <HardPoints>
+            HP_Rebel_Large_Shipyard_Hangar_01,
+            HP_Rebel_Large_Shipyard_Hangar_02,
+            HP_Rebel_Large_Shipyard_Hangar_03,
+            HP_Rebel_Large_Shipyard_Shield_01,
+            HP_MandalMotors_Shipyard_laser_01,
+            HP_MandalMotors_Shipyard_laser_02,
+            HP_MandalMotors_Shipyard_laser_03,
+            HP_MandalMotors_Shipyard_laser_04,
+            HP_MandalMotors_Shipyard_Missile_01,
+            HP_MandalMotors_Shipyard_Missile_02,
+            HP_MandalMotors_Shipyard_PD_01,
+            HP_MandalMotors_Shipyard_PD_02,
+            HP_MandalMotors_Shipyard_PD_03,
+            HP_MandalMotors_Shipyard_PD_04,
+            HP_Large_Shipyard_Hull_Dummy,
+            HP_Large_Shipyard_Hull          
+        </HardPoints>
+
+        <Starting_Spawned_Units_Tech_0>N_LAF250_S, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>N_LAF250_S, 3</Reserve_Spawned_Units_Tech_0>
+
+        <Starting_Spawned_Units_Tech_0>N_HLAF500_S, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>N_HLAF500_S, 2</Reserve_Spawned_Units_Tech_0>
+
+        <Starting_Spawned_Units_Tech_0>CorSec_Defense_Fleet, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>CorSec_Defense_Fleet, 0</Reserve_Spawned_Units_Tech_0>
+
+        <Abilities SubObjectList="Yes">
+            <Planet_Income_Bonus_Ability Name="Structure_Upkeep">
+                
+                
+                <Percentage_Income_Modifier>0.0</Percentage_Income_Modifier>
+                
+                <Absolute_Income_Modifier>-60</Absolute_Income_Modifier>
+                
+                <Additional_Multiplier_On_Mining_Colonies>0.0</Additional_Multiplier_On_Mining_Colonies>
+                
+            </Planet_Income_Bonus_Ability>
+            <Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected />
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type />
+                <Owner_Light_Effect_Color />
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration />
+                <Owner_Light_Effect_Pulse_Count />
+            </Force_Healing_Ability>
+            <Force_Healing_Ability Name="Repair_Facility_Healing">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>2000.0</Heal_Range>
+                <Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+                <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+                
+                <Applicable_Unit_Categories>Gunship, Corvette, Frigate, Cruiser, Capital</Applicable_Unit_Categories>
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+            </Force_Healing_Ability>
+            <Reduce_Production_Time_Ability Name="CorSec_Shipyard_Production_Time_Reduction">
+                <Unit_Strength_Category />
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types>
+                    T_Corellian_Battlecruiser,
+                    R_Corellian_Battlecruiser,
+                    E_Corellian_Battlecruiser,
+                    P_Corellian_Battlecruiser,
+                    U_Corellian_Battlecruiser,
+
+                    T_Corellian_Destroyer,
+                    R_Corellian_Destroyer,
+                    E_Corellian_Destroyer,
+                    P_Corellian_Destroyer,
+                    U_Corellian_Destroyer,
+
+                    T_CorSec_Frigate,
+                    P_CorSec_Frigate,
+                    R_CorSec_Frigate,
+                    E_CorSec_Frigate,
+                    U_CorSec_Frigate,
+
+                    T_CorSec_Carrier,
+                    P_CorSec_Carrier,
+                    R_CorSec_Carrier,
+                    E_CorSec_Carrier,
+                    U_CorSec_Carrier,
+
+                    T_Heavy_Corellian_Gunship,
+                    U_Heavy_Corellian_Gunship,
+
+                    U_XX_777_Corvette,
+
+                    R_CC_7700,
+                    U_CC_7700,
+
+                    U_Interceptor_4_Frigate,
+                    T_Interceptor_Frigate,
+                    R_Interceptor_Frigate,
+                    U_Interceptor_Frigate,
+                    H_Interceptor_Frigate,
+
+                    T_Heavy_Corellian_Corvette,
+                    U_Heavy_Corellian_Corvette,
+
+                    R_Corellian_Corvette,
+
+                    R_Corellian_Gunship,
+
+                    YT_1300_Freighter,
+                    U_ActionIV_Freighter,
+                    ActionIV_Freighter,
+                    U_Salvage_Freigher,
+
+                    T_Gozanti_Cruiser_Squadron,
+                    E_Gozanti_Cruiser_Squadron,
+                    E_Gozanti_Cruiser_Bomber_Squadron,
+                    E_Gozanti_Cruiser_Brute_Squadron,
+                    E_Gozanti_Cruiser_Interceptor_Squadron,
+
+                    U_CROC_Gozanti_Cruiser_S,
+
+                    U_HWK_290_S,
+                </Applicable_Unit_Types>
+                <Excluded_Unit_Types />
+                <Time_Reduction_Percentage>0.2</Time_Reduction_Percentage>
+                <Stacking_Category>10</Stacking_Category>
+                <Galaxy_Wide> No </Galaxy_Wide>
+            </Reduce_Production_Time_Ability>
+        </Abilities>
+
+    </SpecialStructure>
+
+    <SpaceUnit Name="CorSec_Planetary_Defense_ORBITAL_DUMMY">
+        <Variant_Of_Existing_Type>Orbital_Dummy_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SHIPYARD_CORSEC</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_LARGE
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_CORSEC_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_CORSEC_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_UPKEEP_120
+        </Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_SHIPYARD_CORSEC.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="DELETE_STRUCTURE_CorSec_Planetary_Defense">
+        <Variant_Of_Existing_Type>DELETE_STRUCTURE_TEMPLATE</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_DELETE_PLANETARY_DEFENSE_CORSEC</Text_ID>
+        <Required_Special_Structures>CorSec_Planetary_Defense</Required_Special_Structures>
+        <Affiliation>Empire, Rebel, Underworld</Affiliation>
+        <Tech_Level>0</Tech_Level>
+        <Icon_Name>I_BUTTON_SHIPYARD_CORSEC_DEMO.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpecialStructure Name="Bakura_Planetary_Defense">
+        <Variant_Of_Existing_Type>T_Generic_Shipyard</Variant_Of_Existing_Type>
+
+        <Text_ID>AOTR_TEXT_SHIPYARD_BAKURAN</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_MEDIUM
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_BAKURAN_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_BAKURA_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_SPEED_UP_PRODUCTION_BAKURA
+            AOTR_UPKEEP_60
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_SHIPYARD_BAKURA.tga</Icon_Name>
+
+        <Affiliation>Empire, Rebel, Pirates, Underworld, CSA, Hutts, Warlords, Hapans</Affiliation>
+        <Build_Cost_Credits>6000</Build_Cost_Credits>
+        <Score_Cost_Credits> 600 </Score_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+        <Required_Planets>Bakura, Bakura_Web, Bakura_Big</Required_Planets>
+        <Population_Value>2</Population_Value>
+
+        <SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Unit_Under_Attack> EHD_Scanner_Under_Attack </SFXEvent_Unit_Under_Attack>
+        <SFXEvent_Unit_Lost> EHD_Scanner_Destroyed </SFXEvent_Unit_Lost>
+        <SFXEvent_Select> Structure_Scanner_Select_SFX </SFXEvent_Select>
+       
+        <HardPoints>
+            HP_Rebel_Large_Shipyard_Hangar_01,
+            HP_Rebel_Large_Shipyard_Hangar_02,
+            HP_Rebel_Large_Shipyard_Hangar_03,
+            HP_Rebel_Large_Shipyard_Shield_01,
+            HP_MandalMotors_Shipyard_laser_01,
+            HP_MandalMotors_Shipyard_laser_02,
+            HP_MandalMotors_Shipyard_laser_03,
+            HP_MandalMotors_Shipyard_laser_04,
+            HP_MandalMotors_Shipyard_Missile_01,
+            HP_MandalMotors_Shipyard_Missile_02,
+            HP_MandalMotors_Shipyard_PD_01,
+            HP_MandalMotors_Shipyard_PD_02,
+            HP_MandalMotors_Shipyard_PD_03,
+            HP_MandalMotors_Shipyard_PD_04,
+            HP_Large_Shipyard_Hull_Dummy,
+            HP_Large_Shipyard_Hull,
+            
+        </HardPoints>
+
+        <Starting_Spawned_Units_Tech_0>N_Razor_S, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>N_Razor_S, 3</Reserve_Spawned_Units_Tech_0>
+
+        <Starting_Spawned_Units_Tech_0>P_Bakura_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>P_Bakura_Destroyer, 0</Reserve_Spawned_Units_Tech_0>
+
+        <Abilities SubObjectList="Yes">
+            <Planet_Income_Bonus_Ability Name="Structure_Upkeep">
+                
+                
+                <Percentage_Income_Modifier>0.0</Percentage_Income_Modifier>
+                
+                <Absolute_Income_Modifier>-60</Absolute_Income_Modifier>
+                
+                <Additional_Multiplier_On_Mining_Colonies>0.0</Additional_Multiplier_On_Mining_Colonies>
+                
+            </Planet_Income_Bonus_Ability>
+            <Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected />
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type />
+                <Owner_Light_Effect_Color />
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration />
+                <Owner_Light_Effect_Pulse_Count />
+            </Force_Healing_Ability>
+            <Force_Healing_Ability Name="Repair_Facility_Healing">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>2000.0</Heal_Range>
+                <Heal_Percent> 0.05 </Heal_Percent>
+                <Blob_Color>0, 255, 0, 255</Blob_Color>
+                <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+                
+                <Applicable_Unit_Categories>Gunship, Corvette, Frigate, Cruiser, Capital</Applicable_Unit_Categories>
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+            </Force_Healing_Ability>
+            <Reduce_Production_Time_Ability Name="Bakuran_Shipyard_Production_Time_Reduction">
+                <Unit_Strength_Category />
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types>
+                    P_Bakura_Destroyer,
+                    R_Bakura_Destroyer,
+                    E_Bakura_Destroyer,
+                    U_Bakura_Destroyer,
+                    Bakura_Destroyer,
+                </Applicable_Unit_Types>
+                <Excluded_Unit_Types />
+                <Time_Reduction_Percentage>0.2</Time_Reduction_Percentage>
+                <Stacking_Category>10</Stacking_Category>
+                <Galaxy_Wide> No </Galaxy_Wide>
+            </Reduce_Production_Time_Ability>
+        </Abilities>
+    </SpecialStructure>
+
+    <SpaceUnit Name="Bakura_Planetary_Defense_ORBITAL_DUMMY">
+        <Variant_Of_Existing_Type>Orbital_Dummy_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SHIPYARD_BAKURAN</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_MEDIUM
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_BAKURAN_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_BAKURA_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_UPKEEP_120
+        </Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_SHIPYARD_BAKURA.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="DELETE_STRUCTURE_Bakura_Planetary_Defense">
+        <Variant_Of_Existing_Type>DELETE_STRUCTURE_TEMPLATE</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_DELETE_PLANETARY_DEFENSE_BAKURA</Text_ID>
+        <Required_Special_Structures>Bakura_Planetary_Defense</Required_Special_Structures>
+        <Affiliation>Empire, Rebel, Underworld</Affiliation>
+        <Tech_Level>0</Tech_Level>
+        <Icon_Name>I_BUTTON_SHIPYARD_BAKURA_DEMO.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpecialStructure Name="Hapes_Planetary_Defense">
+        <Variant_Of_Existing_Type>T_Generic_Shipyard</Variant_Of_Existing_Type>
+
+        <Text_ID>AOTR_TEXT_SHIPYARD_HAPAN</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_LARGE
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_HAPAN_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_HAPAN_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_SPEED_UP_PRODUCTION_HAPES
+            AOTR_UPKEEP_60
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_HAPAN_SHIPYARD_BIG.TGA</Icon_Name>
+
+        <Required_Planets>Hapes, Hapes_Web, Hapes_Big</Required_Planets>
+        <Affiliation>Empire,Rebel,Underworld</Affiliation>
+        <Population_Value>3</Population_Value>
+
+        <Build_Cost_Credits>8000</Build_Cost_Credits>
+        <Score_Cost_Credits> 600 </Score_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+
+        <SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Unit_Under_Attack> RHD_Scanner_Under_Attack </SFXEvent_Unit_Under_Attack>
+        <SFXEvent_Unit_Lost> RHD_Scanner_Destroyed </SFXEvent_Unit_Lost>
+        <SFXEvent_Select> Structure_Scanner_Select_SFX </SFXEvent_Select>
+        
+        <HardPoints>
+            HP_Rebel_Large_Shipyard_Hangar_01,
+            HP_Rebel_Large_Shipyard_Hangar_02,
+            HP_Rebel_Large_Shipyard_Hangar_03,
+            HP_Rebel_Large_Shipyard_Shield_01,
+            HP_MandalMotors_Shipyard_laser_01,
+            HP_MandalMotors_Shipyard_laser_02,
+            HP_MandalMotors_Shipyard_laser_03,
+            HP_MandalMotors_Shipyard_laser_04,
+            HP_MandalMotors_Shipyard_Missile_01,
+            HP_MandalMotors_Shipyard_Missile_02,
+            HP_MandalMotors_Shipyard_PD_01,
+            HP_MandalMotors_Shipyard_PD_02,
+            HP_MandalMotors_Shipyard_PD_03,
+            HP_MandalMotors_Shipyard_PD_04,
+            HP_Large_Shipyard_Hull_Dummy,
+            HP_Large_Shipyard_Hull,
+            
+        </HardPoints>
+
+        <Starting_Spawned_Units_Tech_0>N_Miytil_S, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>N_Miytil_S, 3</Reserve_Spawned_Units_Tech_0>
+        
+        <Starting_Spawned_Units_Tech_0>Hapes_Defense_Fleet, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>Hapes_Defense_Fleet, 0</Reserve_Spawned_Units_Tech_0>
+
+        <Abilities SubObjectList="Yes">
+            <Planet_Income_Bonus_Ability Name="Structure_Upkeep">
+                
+                
+                <Percentage_Income_Modifier>0.0</Percentage_Income_Modifier>
+                
+                <Absolute_Income_Modifier>-60</Absolute_Income_Modifier>
+                
+                <Additional_Multiplier_On_Mining_Colonies>0.0</Additional_Multiplier_On_Mining_Colonies>
+                
+            </Planet_Income_Bonus_Ability>
+            <Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected />
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type />
+                <Owner_Light_Effect_Color />
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration />
+                <Owner_Light_Effect_Pulse_Count />
+            </Force_Healing_Ability>
+        </Abilities>
+        <Force_Healing_Ability Name="Repair_Facility_Healing">
+            <Activation_Style>Space_Automatic</Activation_Style>
+            <Heal_Range>2000.0</Heal_Range>
+            <Heal_Percent> 0.05 </Heal_Percent>
+            <Blob_Color>0, 255, 0, 255</Blob_Color>
+            <Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+            <Single_Target_Heal>No</Single_Target_Heal>
+            <Heal_Range_Blob_Material>Reinforcement_Point_Radius_Overlay</Heal_Range_Blob_Material>
+            
+            <Applicable_Unit_Categories>Gunship, Corvette, Frigate, Cruiser, Capital</Applicable_Unit_Categories>
+            <Applicable_Unit_Types />
+            <SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+        </Force_Healing_Ability>
+        <Reduce_Production_Time_Ability Name="Hapan_Shipyard_Production_Time_Reduction">
+            <Unit_Strength_Category />
+            <Applicable_Unit_Categories />
+            <Applicable_Unit_Types>
+                T_Royale_Battledragon,
+                Hapans_Royale_Battledragon,
+
+                T_Battledragon,
+                R_Battledragon,
+                E_Battledragon,
+                P_Battledragon,
+                U_Battledragon,
+                Hapans_Battledragon,
+
+                T_Nova_Cruiser,
+                Hapans_Nova_Cruiser,
+                R_Nova_Cruiser,
+                U_Nova_Cruiser,
+                E_Nova_Cruiser,
+
+                T_Beta_Cruiser,
+                Hapans_Beta_Cruiser,
+                R_Beta_Cruiser,
+                E_Beta_Cruiser,
+                U_Beta_Cruiser,
+
+                N_Miytil_S,
+                Hapans_Miytil_S,
+                N_Miytil_Bomber_S,
+                Hapans_Miytil_Bomber_S,
+                N_Sail_Fighter_S,
+                Hapans_Sail_Fighter_S,
+            </Applicable_Unit_Types>
+            <Excluded_Unit_Types />
+            <Time_Reduction_Percentage>0.5</Time_Reduction_Percentage>
+            <Stacking_Category>9</Stacking_Category>
+            <Galaxy_Wide> No </Galaxy_Wide>
+        </Reduce_Production_Time_Ability>
+    </SpecialStructure>
+
+    <SpaceUnit Name="Hapes_Planetary_Defense_ORBITAL_DUMMY">
+        <Variant_Of_Existing_Type>Orbital_Dummy_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SHIPYARD_HAPAN</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_LARGE
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_HAPAN_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_HAPAN_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_UPKEEP_120
+        </Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_HAPAN_SHIPYARD_BIG.TGA</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="DELETE_STRUCTURE_Hapes_Planetary_Defense">
+        <Variant_Of_Existing_Type>DELETE_STRUCTURE_TEMPLATE</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_DELETE_PLANETARY_DEFENSE_HAPES</Text_ID>
+        <Required_Special_Structures>Hapes_Planetary_Defense</Required_Special_Structures>
+        <Affiliation>Empire, Rebel, Underworld</Affiliation>
+        <Tech_Level>0</Tech_Level>
+        <Icon_Name>I_BUTTON_HAPAN_SHIPYARD_BIG_DEMO.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpecialStructure Name="Bothawui_Planetary_Defense">
+        <Variant_Of_Existing_Type>T_Generic_Shipyard</Variant_Of_Existing_Type>
+
+        <Text_ID>AOTR_TEXT_SHIPYARD_BOTHAN</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_MEDIUM
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_BOTHAN_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_BOTHAN_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_SPEED_UP_PRODUCTION_BOTHAN
+            AOTR_UPKEEP_45
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+    
+        <Icon_Name>I_BUTTON_SHIPYARD_BOTHAN.tga</Icon_Name>
+        <Affiliation>Rebel</Affiliation>
+
+        <Build_Cost_Credits>4000</Build_Cost_Credits>
+        <Score_Cost_Credits> 600 </Score_Cost_Credits>
+        <Build_Time_Seconds>150</Build_Time_Seconds>
+        <Tech_Level>3</Tech_Level>
+        <Required_Planets>Bothawui, Bothawui_Web, Bothawui_Big</Required_Planets>
+        <Population_Value>2</Population_Value>
+
+
+        <SFXEvent_Build_Started>RHD_Build_Structure</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>RHD_Building_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>RHD_Construction_Complete</SFXEvent_Build_Complete>
+        <Death_SFXEvent_Start_Die>Unit_Generic_Building_Death_SFX</Death_SFXEvent_Start_Die>
+        <SFXEvent_Unit_Under_Attack> RHD_Scanner_Under_Attack </SFXEvent_Unit_Under_Attack>
+        <SFXEvent_Unit_Lost> RHD_Scanner_Destroyed </SFXEvent_Unit_Lost>
+        <SFXEvent_Select> Structure_Scanner_Select_SFX </SFXEvent_Select>
+
+        <HardPoints>
+            HP_Rebel_Large_Shipyard_Hangar_01,
+            HP_Rebel_Large_Shipyard_Hangar_02,
+            HP_Rebel_Large_Shipyard_Hangar_03,
+            HP_Rebel_Large_Shipyard_Shield_01,
+            HP_MandalMotors_Shipyard_laser_01,
+            HP_MandalMotors_Shipyard_laser_02,
+            HP_MandalMotors_Shipyard_laser_03,
+            HP_MandalMotors_Shipyard_laser_04,
+            HP_MandalMotors_Shipyard_Missile_01,
+            HP_MandalMotors_Shipyard_Missile_02,
+            HP_MandalMotors_Shipyard_PD_01,
+            HP_MandalMotors_Shipyard_PD_02,
+            HP_MandalMotors_Shipyard_PD_03,
+            HP_MandalMotors_Shipyard_PD_04,
+            HP_Large_Shipyard_Hull_Dummy,
+            HP_Large_Shipyard_Hull,
+            
+        </HardPoints>
+
+        <Starting_Spawned_Units_Tech_0>R_X_Wing_S, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>R_X_Wing_S, 3</Reserve_Spawned_Units_Tech_0>
+
+        <Starting_Spawned_Units_Tech_0>R_Bothan_Assault_Cruiser, 1</Starting_Spawned_Units_Tech_0>
+        <Reserve_Spawned_Units_Tech_0>R_Bothan_Assault_Cruiser, 0</Reserve_Spawned_Units_Tech_0>
+
+        <Abilities SubObjectList="Yes">
+            <Planet_Income_Bonus_Ability Name="Structure_Upkeep">
+                
+                
+                <Percentage_Income_Modifier>0.0</Percentage_Income_Modifier>
+                
+                <Absolute_Income_Modifier>-45</Absolute_Income_Modifier>
+                
+                <Additional_Multiplier_On_Mining_Colonies>0.0</Additional_Multiplier_On_Mining_Colonies>
+                
+            </Planet_Income_Bonus_Ability>
+            <Force_Healing_Ability Name="E_Mineral_Extractor_Self_Repair">
+                <Activation_Style>Space_Automatic</Activation_Style>
+                <Heal_Range>0.0</Heal_Range>
+                <Heal_Percent>0.01</Heal_Percent>
+                <Heal_Amount>0.0</Heal_Amount>
+                <Heal_Interval_In_Secs>4.0</Heal_Interval_In_Secs>
+                <Single_Target_Heal>No</Single_Target_Heal>
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types />
+                <SFXEvent_Target_Affected />
+                <Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+                <Owner_Light_Effect_Type />
+                <Owner_Light_Effect_Color />
+                <Owner_Light_Effect_Color2 />
+                <Owner_Light_Effect_Duration />
+                <Owner_Light_Effect_Pulse_Count />
+            </Force_Healing_Ability>
+            <Reduce_Production_Time_Ability Name="Bothawui_Shipyard_Production_Time_Reduction">
+                <Unit_Strength_Category />
+                <Applicable_Unit_Categories />
+                <Applicable_Unit_Types>
+                    T_Bothan_Assault_Cruiser,
+                    R_Bothan_Assault_Cruiser,
+                </Applicable_Unit_Types>
+                <Excluded_Unit_Types />
+                <Time_Reduction_Percentage>0.2</Time_Reduction_Percentage>
+                <Stacking_Category>10</Stacking_Category>
+                <Galaxy_Wide> No </Galaxy_Wide>
+            </Reduce_Production_Time_Ability>
+        </Abilities>
+
+    </SpecialStructure>
+
+    <SpaceUnit Name="Bothawui_Planetary_Defense_ORBITAL_DUMMY">
+        <Variant_Of_Existing_Type>Orbital_Dummy_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SHIPYARD_BOTHAN</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_SPACE_CLASS_SHIPYARD_PLANET_DEFENSE
+            AOTR_SPACE_ROLE_REPAIR_DOCKYARD_FLEET_MEDIUM
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_SHIPYARD_BOTHAN_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_SPACE_SHIELD_BALANCED_REG_9500
+            AOTR_SPACE_HULL_MEDIUM_10000
+            AOTR_SPACE_SENSOR_1000
+            AOTR_SPACE_RANGE_5000_3000
+            AOTR_SPACE_WEAPONS_GENERIC_SHIPYARD
+            AOTR_GARRISON_BOTHAN_SHIPYARD
+            AOTR_TEXT_EMPTY
+            AOTR_UPKEEP_90
+        </Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_SHIPYARD_BOTHAN.tga</Icon_Name>
+    </SpaceUnit>
+
+    <SpaceUnit Name="DELETE_STRUCTURE_Bothawui_Planetary_Defense">
+        <Variant_Of_Existing_Type>DELETE_STRUCTURE_TEMPLATE</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_DELETE_PLANETARY_DEFENSE_BOTHAWUI</Text_ID>
+        <Required_Special_Structures>Bothawui_Planetary_Defense</Required_Special_Structures>
+        <Affiliation>Rebel</Affiliation>
+        <Tech_Level>0</Tech_Level>
+        <Icon_Name>I_BUTTON_SHIPYARD_BOTHAN_DEMO.tga</Icon_Name>
+    </SpaceUnit>
+
+    
+</SpecialStructures>

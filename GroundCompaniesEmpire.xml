@@ -1,0 +1,2438 @@
+<EmpireGroundCompanies>
+	
+	<GroundCompany Name="Imperial_ArmyTrooper_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_TEXT_E_ARMYTROOPER_PLATOON</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_BASIC
+			AOTR_LAND_ROLE_FRONT_LINE
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_EMPIRE_TROOPER
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4_10
+            AOTR_COMPOSITION_ARMY_TROOPER
+            AOTR_LAND_HEALTH_12
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_SPREAD_OUT
+	BLACKBURN_NUMBER_0.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_BASIC</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_EMPIRE_TROOPER.TGA</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>500</Build_Cost_Credits>
+		<Build_Time_Seconds>33</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Barracks_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            Imperial_ArmyTrooper_Platoon_Spawner
+	    </Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Army_Troopers_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Army_Troopers_Move</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+    <GroundCompany Name="Imperial_ArmyTrooper_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Imperial_ArmyTrooper_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+        
+        <Company_Units>
+            Armytrooper,
+            Armytrooper,
+            Armytrooper,
+            Armytrooper,
+            Armytrooper_Rifleman,
+            Armytrooper_Gunner,
+            Armytrooper,
+            Armytrooper_Frag_Grenade,
+            Armytrooper,
+            Armytrooper_Lieutenant,
+
+            Armytrooper,
+            Armytrooper,
+            Armytrooper_Gunner,
+            Armytrooper,
+            Armytrooper_Rifleman,
+            Armytrooper,
+            Armytrooper,
+            Armytrooper_Frag_Grenade,
+            Armytrooper,
+            Armytrooper_Sergeant,
+
+            Armytrooper,
+            Armytrooper,
+            Armytrooper,
+            Armytrooper,
+            Armytrooper_Rifleman,
+            Armytrooper,
+            Armytrooper_Gunner,
+            Armytrooper_Frag_Grenade,
+            Armytrooper,
+            Armytrooper_Sergeant,
+
+            Armytrooper,
+            Armytrooper,
+            Armytrooper,
+            Armytrooper,
+            Armytrooper_Rifleman,
+            Armytrooper,
+            Armytrooper_Gunner,
+            Armytrooper_Frag_Grenade,
+            Armytrooper,
+            Armytrooper,
+        </Company_Units>
+        <Max_Squad_Size>10</Max_Squad_Size>
+        <Create_Team_Type> Imperial_ArmyTrooper_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+	<GroundCompany Name="Imperial_ArmyTrooper_Support_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_ARMYTROOPER_SUPPORT_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_BASIC
+			AOTR_LAND_ROLE_COMBAT_SUPPORT
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_ARMYTROOPER_SUPPORT_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2_8
+            AOTR_COMPOSITION_ARMY_TROOPER_SUPPORT
+            AOTR_LAND_HEALTH_12
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_SPREAD_OUT
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_INFANTRY_1
+	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_BASIC</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_E_ARMYTROOPER_SUPPORT.TGA</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>650</Build_Cost_Credits>
+		<Build_Time_Seconds>43</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Barracks_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            Imperial_ArmyTrooper_Support_Platoon_Spawner
+	    </Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Army_Troopers_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Army_Troopers_Move</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>325</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+    <GroundCompany Name="Imperial_ArmyTrooper_Support_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Imperial_ArmyTrooper_Support_Platoon</Variant_Of_Existing_Type>
+
+        <Affiliation>Hostile</Affiliation>
+        <Company_Units>
+            Armytrooper_Support,
+            Armytrooper_Engineer,
+            Armytrooper_Support,
+            Armytrooper_Medic,
+            Armytrooper_Support,
+            Armytrooper_Engineer,
+            Armytrooper_Medic,
+            Armytrooper_Lieutenant_Support,
+
+            Armytrooper_Support,
+            Armytrooper_Engineer,
+            Armytrooper_Support,
+            Armytrooper_Medic,
+            Armytrooper_Support,
+            Armytrooper_Engineer,
+            Armytrooper_Medic,
+            Armytrooper_Sergeant_Support,
+        </Company_Units>
+        <Max_Squad_Size>8</Max_Squad_Size>
+        <Create_Team_Type> Imperial_ArmyTrooper_Support_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+	<GroundCompany Name="Imperial_ArmyTrooper_Heavy_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_ARMYTROOPER_HEAVY_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_BASIC
+			AOTR_LAND_ROLE_ANTI_ARMOR_LT
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_ARMYTROOPER_HEAVY_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_ARMY_TROOPER_HEAVY
+            AOTR_LAND_HEALTH_12
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_SPREAD_OUT
+	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_BASIC</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_E_ARMYTROOPER_HEAVY.TGA</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>750</Build_Cost_Credits>
+		<Build_Time_Seconds>50</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Barracks_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+        <Company_Units>
+            Imperial_ArmyTrooper_Heavy_Platoon_Spawner
+	    </Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Army_Troopers_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Army_Troopers_Move</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>375</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+    <GroundCompany Name="Imperial_ArmyTrooper_Heavy_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Imperial_ArmyTrooper_Heavy_Platoon</Variant_Of_Existing_Type>
+
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Armytrooper_Gunner_Heavy,
+            Armytrooper_Heavy,
+            Armytrooper_Rifleman_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Rifleman_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Lieutenant_Heavy,
+
+            Armytrooper_Gunner_Heavy,
+            Armytrooper_Heavy,
+            Armytrooper_Rifleman_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Rifleman_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Sergeant_Heavy,
+
+            Armytrooper_Gunner_Heavy,
+            Armytrooper_Heavy,
+            Armytrooper_Rifleman_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Rifleman_Heavy,
+            Armytrooper_Grenadier_Heavy,
+            Armytrooper_Sergeant_Heavy,
+        </Company_Units>
+        <Max_Squad_Size>8</Max_Squad_Size>
+        <Create_Team_Type> Imperial_ArmyTrooper_Heavy_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+	
+    <GroundCompany Name="Imperial_Stormtrooper_Squad">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_STORMTROOPER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+			AOTR_LAND_ROLE_FRONT_LINE
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_STORMTROOPER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4_10
+            AOTR_COMPOSITION_STORM_TROOPER
+            AOTR_LAND_HEALTH_18
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_TAKE_COVER
+	BLACKBURN_NUMBER_1.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_TRAINED</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_E_STORMTROOPER.TGA</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1000</Build_Cost_Credits>
+        <Build_Time_Seconds>67</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Barracks_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+        <Company_Units>
+            Imperial_Stormtrooper_Squad_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Imperial_Stormtrooper_Squad_Dummy">
+        <Variant_Of_Existing_Type>Imperial_Stormtrooper_Squad</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Stormtrooper_Lieutenant,
+            Stormtrooper_Rifleman,
+            Stormtrooper_Frag_Grenade,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper_Gunner,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+
+            Stormtrooper,
+            Stormtrooper_Sergeant,
+            Stormtrooper_Frag_Grenade,
+            Stormtrooper_Rifleman,
+            Stormtrooper_Gunner,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+
+            Stormtrooper,
+            Stormtrooper_Sergeant,
+            Stormtrooper,
+            Stormtrooper_Rifleman,
+            Stormtrooper_Gunner,
+            Stormtrooper_Frag_Grenade,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper_Frag_Grenade,
+            Stormtrooper_Rifleman,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper,
+            Stormtrooper_Gunner,
+            Stormtrooper,
+        </Company_Units>
+        <Max_Squad_Size> 10 </Max_Squad_Size>
+        <Create_Team_Type> Stormtrooper_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+	<GroundCompany Name="Imperial_Stormtrooper_Gunner_Squad">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_STORMTROOPER_SUPPRESSION_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+			AOTR_LAND_ROLE_SUPPRESSION
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_STORMTROOPER_SUPPRESSION_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_STORM_TROOPER_SUPPRESSION
+            AOTR_LAND_HEALTH_18
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_INFANTRY_1
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_TRAINED</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_E_STORMTROOPER_SUPPRESSION.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1500</Build_Cost_Credits>
+		<Build_Time_Seconds>100</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Barracks_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            Imperial_Stormtrooper_Gunner_Squad_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>37</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+    <GroundCompany Name="Imperial_Stormtrooper_Gunner_Squad_Dummy">
+        <Variant_Of_Existing_Type>Imperial_Stormtrooper_Gunner_Squad</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Stormtrooper_Rifleman_Suppr,
+            Stormtrooper_Sergeant_Suppr,
+            Stormtrooper_Suppr,
+            Stormtrooper_Gunner_Suppr,
+            Stormtrooper_Gunner_Suppr,
+            Stormtrooper_Suppr,
+            Stormtrooper_Rifleman_Suppr,
+            Stormtrooper_Gunner_Suppr,
+
+            Stormtrooper_Rifleman_Suppr,
+            Stormtrooper_Sergeant_Suppr,
+            Stormtrooper_Suppr,
+            Stormtrooper_Gunner_Suppr,
+            Stormtrooper_Gunner_Suppr,
+            Stormtrooper_Suppr,
+            Stormtrooper_Rifleman_Suppr,
+            Stormtrooper_Gunner_Suppr,
+
+            Stormtrooper_Rifleman_Suppr,
+            Stormtrooper_Lieutenant_EWEB,
+            Stormtrooper_Gunner_Suppr,
+            Stormtrooper_Gunner_Suppr,
+            Stormtrooper_Suppr,
+            Stormtrooper_Rifleman_Suppr,
+            Stormtrooper_Gunner_Suppr,
+            Stormtrooper_Suppr,
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Stormtrooper_Suppression_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+	<GroundCompany Name="Imperial_Stormtrooper_AntiArmor_Squad">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_STORMTROOPER_ROCKETEER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+			AOTR_LAND_ROLE_ANTI_ARMOR
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_STORMTROOPER_ROCKETEER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2_6
+            AOTR_COMPOSITION_STORM_TROOPER_HEAVY
+            AOTR_LAND_HEALTH_18
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_INFANTRY_1
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_TRAINED</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_E_STORMTROOPER_ROCKETEER.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Build_Time_Seconds>87</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Barracks_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            Imperial_Stormtrooper_AntiArmor_Squad_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>650</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>32</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+    <GroundCompany Name="Imperial_Stormtrooper_AntiArmor_Squad_Dummy">
+        <Variant_Of_Existing_Type>Imperial_Stormtrooper_AntiArmor_Squad</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Stormtrooper_Sergeant_Rocketeer,
+            Stormtrooper_Rocketeer,
+            Stormtrooper_Concussion_Grenade,
+            Stormtrooper_Rocketeer,
+            Stormtrooper_Concussion_Grenade,
+            Stormtrooper_Rocketeer,
+
+            Stormtrooper_Rocketeer,
+            Stormtrooper_Concussion_Grenade,
+            Stormtrooper_Concussion_Grenade,
+            Stormtrooper_Rocketeer
+            Stormtrooper_Heavy,
+            Stormtrooper_Rocketeer
+        </Company_Units>
+        <Max_Squad_Size> 6 </Max_Squad_Size>
+        <Create_Team_Type> Stormtrooper_AntiArmor_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+	<GroundCompany Name="Imperial_Scouttrooper_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_SCOUTTROOPER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+			AOTR_LAND_ROLE_SCOUT_RANGER
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_SCOUTTROOPER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_SCOUT_TROOPER
+            AOTR_LAND_HEALTH_18
+			AOTR_LAND_SPEED_8
+			AOTR_LAND_RANGE_800
+			AOTR_LAND_FOW_600
+            AOTR_ABILITY_PING
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_INFANTRY_2
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_TRAINED</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_E_SCOUTTROOPER.TGA</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1200</Build_Cost_Credits>
+        <Build_Time_Seconds>80</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Barracks_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+        <Company_Units>
+            Imperial_Scouttrooper_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Scout_Trooper_New</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Scout_Trooper_New</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+    <GroundCompany Name="Imperial_Scouttrooper_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Imperial_Scouttrooper_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Snipertrooper,
+            Scout_Trooper_Sergeant,
+            Snipertrooper,
+            Scout_Trooper_Rifleman,
+            Snipertrooper,
+            Scout_Trooper_Rifleman,
+            Scout_Trooper_Rifleman,
+            Scout_Trooper_Flash_Grenade,
+
+            Snipertrooper,
+            Snipertrooper
+            Snipertrooper,
+            Scout_Trooper_Rifleman,
+            Snipertrooper,
+            Scout_Trooper_Rifleman,
+            Scout_Trooper_Rifleman,
+            Scout_Trooper_Flash_Grenade,
+
+            Snipertrooper,
+            Scout_Trooper_Lieutenant,
+            Scout_Trooper_Rifleman,
+            Scout_Trooper_Flash_Grenade,
+            Snipertrooper,
+            Scout_Trooper_Rifleman,
+            Scout_Trooper_Rifleman,
+            Scout_Trooper_Sergeant,
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Scouttrooper_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+	
+	<GroundCompany Name="Shocktrooper_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_SHOCKTROOPER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_ELITE
+			AOTR_LAND_ROLE_FRONT_LINE
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_SHOCKTROOPER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_SHOCK_TROOPER
+            AOTR_LAND_HEALTH_24
+			AOTR_LAND_SPEED_7
+			AOTR_LAND_RANGE_600
+			AOTR_LAND_FOW_250
+            AOTR_ABILITY_FIRING_POSITION
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_ELITE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_shock_trooper.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>2000</Build_Cost_Credits>
+		<Build_Time_Seconds>133</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Barracks_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            Shocktrooper_Platoon_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>ShockTroopers_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>ShockTroopers_Move</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+    <GroundCompany Name="Shocktrooper_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Shocktrooper_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Shocktrooper_Sergeant,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Grenadier,
+            Shocktrooper_Gunner,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Gunner,
+            Shocktrooper_Rifleman,
+
+            Shocktrooper_Sergeant,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Grenadier,
+            Shocktrooper_Gunner,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Gunner,
+            Shocktrooper_Rifleman,
+
+            Shocktrooper_Lieutenant,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Grenadier,
+            Shocktrooper_Gunner,
+            Shocktrooper_Rifleman,
+            Shocktrooper_Gunner,
+            Shocktrooper_Rifleman,
+        </Company_Units>
+        <Max_Squad_Size>8</Max_Squad_Size>
+        <Create_Team_Type>Shocktrooper_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Shocktrooper_AntiArmor_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_E_SHOCKTROOPER_HEAVY_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_ELITE
+			AOTR_LAND_ROLE_ANTI_ARMOR
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_E_SHOCKTROOPER_HEAVY_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2_6
+            AOTR_COMPOSITION_SHOCK_TROOPER_HEAVY
+            AOTR_LAND_HEALTH_24
+			AOTR_LAND_SPEED_7
+			AOTR_LAND_RANGE_700
+			AOTR_LAND_FOW_250
+            AOTR_ABILITY_FIRING_POSITION
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_INFANTRY_2
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_ELITE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_shocktrooper_heavy.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>2300</Build_Cost_Credits>
+        <Build_Time_Seconds>153</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Barracks_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+        <Company_Units>
+            Shocktrooper_AntiArmor_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>ShockTroopers_Build_Complete</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>ShockTroopers_Move</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1150</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>57</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Shocktrooper_AntiArmor_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Shocktrooper_AntiArmor_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+  
+        <Company_Units>
+            Shocktrooper_Sergeant_Heavy
+			Shocktrooper_Grenadier_Heavy
+            Shocktrooper_Rocketeer
+            Shocktrooper_Rifleman_Heavy
+            Shocktrooper_Rocketeer
+            Shocktrooper_Grenadier_Heavy
+
+            Shocktrooper_Sergeant_Heavy
+            Shocktrooper_Rifleman_Heavy
+            Shocktrooper_Rocketeer
+            Shocktrooper_Grenadier_Heavy
+            Shocktrooper_Rocketeer
+            Shocktrooper_Grenadier_Heavy
+        </Company_Units>
+        <Max_Squad_Size>6</Max_Squad_Size>
+        <Create_Team_Type>Shocktrooper_AntiArmor_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+	
+	<GroundCompany Name="Imperial_Guard_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_INDIG_ELITE_GUARD</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_ELITE
+			AOTR_LAND_ROLE_CQC
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_ELITE_GUARD
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1_6
+            AOTR_COMPOSITION_ROYAL_GUARD
+            AOTR_LAND_SHIELD_TYPE_I
+			AOTR_LAND_SHIELD_20
+			AOTR_LAND_HEALTH_40
+			AOTR_LAND_SPEED_9
+			AOTR_LAND_RANGE_35
+			AOTR_LAND_FOW_400
+            AOTR_ABILITY_SPRINT
+	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_ELITE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_imperial_guard.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>975</Build_Cost_Credits>
+		<Build_Time_Seconds>47</Build_Time_Seconds>
+		<Tech_Level>99</Tech_Level>
+		<Required_Special_Structures>Imperial_Palace</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units> 
+            Squad_Imperial_Guard_Flash,
+            Squad_Imperial_Guard_Frag,
+            Squad_Imperial_Guard,
+            Squad_Imperial_Guard_Flash,
+            Squad_Imperial_Guard_Frag,
+            Squad_Imperial_Guard
+		</Company_Units>
+		<Max_Squad_Size> 6 </Max_Squad_Size>
+        <Create_Team_Type> Imp_Guard_Team </Create_Team_Type>
+        
+
+		<SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Guard_Imp_Guard</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_Imp_Guard</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>440</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+    <GroundCompany Name="Imperial_Guard_T21_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_INDIG_ELITE_GUARD</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_ELITE
+			AOTR_LAND_ROLE_SUPPRESSION
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_ELITE_GUARD_T21
+            AOTR_AMOUNT_1_6
+            AOTR_COMPOSITION_ROYAL_GUARD_GUNNER
+            AOTR_LAND_SHIELD_TYPE_I
+			AOTR_LAND_SHIELD_20
+			AOTR_LAND_HEALTH_40
+			AOTR_LAND_SPEED_9
+			AOTR_LAND_RANGE_550
+			AOTR_LAND_FOW_400
+            AOTR_ABILITY_FIRING_POSITION
+	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_ELITE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_imperial_guard.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>975</Build_Cost_Credits>
+        <Build_Time_Seconds>47</Build_Time_Seconds>
+        <Tech_Level>99</Tech_Level>
+        <Required_Special_Structures>Imperial_Palace</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+        <Company_Units>
+            Squad_Imperial_Guard_T21,
+            Squad_Imperial_Guard_T21_Thermal,
+            Squad_Imperial_Guard_T21_Ion,
+            Squad_Imperial_Guard_T21,
+            Squad_Imperial_Guard_T21_Thermal,
+            Squad_Imperial_Guard_T21_Ion,
+        </Company_Units>
+        <Max_Squad_Size> 6 </Max_Squad_Size>
+        <Create_Team_Type> Imp_Guard_T21_Team </Create_Team_Type>
+
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Guard_Imp_Guard</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Move_Imp_Guard</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>440</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+	<GroundCompany Name="DarkTrooper_1">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_DARKTROOPER_P1_COMPANY</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+			AOTR_LAND_ROLE_CQC_COVERT
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_DARKTROOPER_P1
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2_6
+            AOTR_COMPOSITION_DARK_TROOPER_1
+            AOTR_LAND_ARMOR_D
+			AOTR_LAND_HEALTH_100
+			AOTR_LAND_SPEED_12
+			AOTR_LAND_RANGE_35
+			AOTR_LAND_FOW_300
+            AOTR_ABILITY_RUSH_DOWN
+            AOTR_ABILITY_DT_SHIELD
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_4
+	BLACKBURN_NUMBER_1.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ei_darktrooper_one_COMP.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>950</Build_Cost_Credits>
+		<Build_Time_Seconds>64</Build_Time_Seconds>
+		<Required_Orbiting_Units>Arc_Hammer</Required_Orbiting_Units>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            DarkTrooper_1_Spawner
+        </Company_Units>
+        <Formation_Priority>6</Formation_Priority>
+
+		<SFXEvent_Build_Started>Unit_Buil_DT_Arc_Hammer</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Buil_DT_completed_Arc_Hammer</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_1</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>475</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+    <GroundCompany Name="DarkTrooper_1_Dummy">
+        <Variant_Of_Existing_Type>DarkTrooper_1</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Dark_Trooper_PhaseI
+			Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+            Dark_Trooper_PhaseI
+        </Company_Units>
+        <Max_Squad_Size>6</Max_Squad_Size>
+        <Create_Team_Type>Darktrooper_P1_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+	<GroundCompany Name="DarkTrooper_2">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_DARKTROOPER_P2_COMPANY</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+			AOTR_LAND_ROLE_ANTI_PERSONNEL_COVERT
+			AOTR_TEXT_EMPTY
+			TEXT_TOOLTIP_DARKTROOPER_P2
+			AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4
+			AOTR_LAND_WEAPONS_DARKTROOPER_2
+			AOTR_TEXT_EMPTY
+			AOTR_LAND_ARMOR_D
+			AOTR_LAND_HEALTH_100
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_550
+			AOTR_LAND_FOW_300
+			AOTR_TEXT_EMPTY
+			AOTR_ABILITY_JETPACK
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_3
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ei_darktrooper_two_COMP.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1400</Build_Cost_Credits>
+		<Build_Time_Seconds>93</Build_Time_Seconds>
+		<Required_Orbiting_Units>Arc_Hammer</Required_Orbiting_Units>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            Dark_Trooper_PhaseII,
+            Dark_Trooper_PhaseII, 
+            Dark_Trooper_PhaseII, 
+            Dark_Trooper_PhaseII
+        </Company_Units>
+        <Formation_Priority>6</Formation_Priority>
+
+		<SFXEvent_Build_Started>Unit_Buil_DT_Arc_Hammer</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Buil_DT_completed_Arc_Hammer</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_2</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="DarkTrooper_3">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TOOLTIP_DARKTROOPER_P3_COMPANY</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+			AOTR_LAND_ROLE_ANTI_ARMOR_COVERT
+			AOTR_TEXT_EMPTY
+			TEXT_TOOLTIP_DARKTROOPER_P3
+			AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+			AOTR_LAND_WEAPONS_DARKTROOPER_3
+			AOTR_LAND_ARMOR_D
+			AOTR_LAND_HEALTH_150
+			AOTR_LAND_SPEED_7
+			AOTR_LAND_RANGE_550
+			AOTR_LAND_FOW_350
+			AOTR_TEXT_EMPTY
+			AOTR_ABILITY_DT_DEPLOY
+			AOTR_ABILITY_JETPACK
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_2
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_DROID</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ei_darktrooper_three_COMP.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>2100</Build_Cost_Credits>
+		<Build_Time_Seconds>140</Build_Time_Seconds>
+		<Required_Orbiting_Units>Arc_Hammer</Required_Orbiting_Units>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Loader_Craft_Low</Company_Transport_Unit>
+		<Company_Units>
+            Dark_Trooper_PhaseIII, 
+            Dark_Trooper_PhaseIII,
+            Dark_Trooper_PhaseIII
+        </Company_Units>
+        <Formation_Priority>6</Formation_Priority>
+
+        <SFXEvent_Build_Started>Unit_Buil_DT_Arc_Hammer</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Buil_DT_completed_Arc_Hammer</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Dark_Trooper_3</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Empire_At_At_Level_1">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_IMPERIALATAT_1_COMP</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+			AOTR_LAND_ROLE_BREAKTHROUGH_APC
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+            AOTR_IMPERIALATAT_1_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1
+            AOTR_LAND_WEAPONS_ATAT
+			AOTR_LAND_ARMOR_SVH
+			AOTR_LAND_HEALTH_1650
+			AOTR_LAND_MOVEMENT_WALKER_GIGANTIC
+			AOTR_LAND_SPEED_5
+			AOTR_LAND_RANGE_675
+			AOTR_LAND_FOW_1000
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_HEAVYVEHICLE_1
+	BLACKBURN_NUMBER_6.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_atat.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>4500</Build_Cost_Credits>
+		<Build_Time_Seconds>300</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Advanced_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Gozanti_Cruiser_ATAT</Company_Transport_Unit>
+		<Company_Units>
+            AT_AT_Walker
+        </Company_Units>
+        <Formation_Priority>4</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_AT_AT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_AT</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>2250</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Empire_At_At_Level_2">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_IMPERIALATAT_2_COMP</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+			AOTR_LAND_ROLE_BREAKTHROUGH_APC
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+            AOTR_IMPERIALATAT_1_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1
+            AOTR_LAND_WEAPONS_ATAT_2
+			AOTR_LAND_ARMOR_SVH
+			AOTR_LAND_HEALTH_1750
+			AOTR_LAND_MOVEMENT_WALKER_GIGANTIC
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_800
+			AOTR_LAND_FOW_1000
+			AOTR_ABILITY_MAXIMUM_FIREPOWER
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_HEAVYVEHICLE_2
+	BLACKBURN_NUMBER_8
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_ATAT_LVL2.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>5500</Build_Cost_Credits>
+		<Build_Time_Seconds>367</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Advanced_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Gozanti_Cruiser_ATAT</Company_Transport_Unit>
+		<Company_Units>AT_AT_Walker_2</Company_Units>
+        <Formation_Priority>4</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_AT_AT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_AT</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>2750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>91</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Empire_At_St_Level_1">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_IMPERIALATST_1_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_LIGHT_TANK
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+			AOTR_IMPERIALATST_1_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_ATST
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_250
+			AOTR_LAND_MOVEMENT_WALKER
+			AOTR_LAND_SPEED_9
+			AOTR_LAND_RANGE_575
+			AOTR_LAND_FOW_600
+            AOTR_ABILITY_FULL_SALVO_GRENADES
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_atst.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1900</Build_Cost_Credits>
+		<Build_Time_Seconds>127</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Loader_Craft</Company_Transport_Unit>
+		<Company_Units>
+            AT_ST_Walker_level_1,
+            AT_ST_Walker_level_1,
+            AT_ST_Walker_level_1
+        </Company_Units>
+		<Formation_Priority> 1 </Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Empire_At_St_Level_2">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_IMPERIALATST_2_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_MBT
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+			AOTR_IMPERIALATST_2_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_ATST_2
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_300
+			AOTR_LAND_MOVEMENT_WALKER
+			AOTR_LAND_SPEED_9
+			AOTR_LAND_RANGE_700
+			AOTR_LAND_FOW_600
+			AOTR_ABILITY_STABILITY_FIRE
+	BLACKBURN_NUMBER_4
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_ATST_LVL2.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>2600</Build_Cost_Credits>
+		<Build_Time_Seconds>173</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Loader_Craft</Company_Transport_Unit>
+		<Company_Units>
+            AT_ST_Walker_level_2,
+            AT_ST_Walker_level_2,
+            AT_ST_Walker_level_2
+        </Company_Units>
+		<Formation_Priority> 1 </Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Empire_At_Pt_Level_1">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_IMPERIAL_ATPT_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_SML_VEHICLE
+			AOTR_LAND_ROLE_IFV
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            AOTR_IMPERIAL_ATPT_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_6
+            AOTR_LAND_WEAPONS_ATPT
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_140
+			AOTR_LAND_MOVEMENT_WALKER_SMALL
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_550
+			AOTR_LAND_FOW_500
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_SML_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>At_Pt.TGA</Icon_Name>
+
+		<Affiliation>Empire, Pirates</Affiliation>
+		<Build_Cost_Credits>1200</Build_Cost_Credits>
+		<Build_Time_Seconds>80</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Gozanti_Cruiser_ATPT</Company_Transport_Unit>
+		<Company_Units>
+            At_Pt_Level_1,
+            At_Pt_Level_1,
+            At_Pt_Level_1,
+            At_Pt_Level_1,
+            At_Pt_Level_1,
+            At_Pt_Level_1
+        </Company_Units>
+		<Formation_Priority>1</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Build_AT_PT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_AT_PT</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+
+    <GroundCompany Name="E_AT_MP_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_TEXT_UNIT_ATMP_COMPANY</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_SML_VEHICLE
+			AOTR_LAND_ROLE_IFV
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_ATMP
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4
+            AOTR_LAND_WEAPONS_ATMP
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_150
+			AOTR_LAND_MOVEMENT_WALKER_SMALL
+			AOTR_LAND_SPEED_9
+			AOTR_LAND_RANGE_800
+			AOTR_LAND_FOW_500
+			AOTR_ABILITY_FULL_SALVO_ROCKETS
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_SML_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_ATMP.TGA</Icon_Name>
+
+		<Affiliation>Empire, Pirates</Affiliation>
+		<Build_Cost_Credits>1300</Build_Cost_Credits>
+		<Build_Time_Seconds>87</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Tech_Level>4</Tech_Level>
+
+		<Company_Transport_Unit>Imperial_Loader_Craft</Company_Transport_Unit>
+		<Company_Units>
+            E_AT_MP_Walker,
+            E_AT_MP_Walker,
+            E_AT_MP_Walker,
+            E_AT_MP_Walker,
+        </Company_Units>
+		<Formation_Priority>1</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Build_AT_PT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_AT_PT</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+
+	<GroundCompany Name="Imperial_Anti_Aircraft_Company_level_1">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_IMPERIALATAA_1_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_ANTI_AIR
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            AOTR_IMPERIALATAA_1_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_ATAA
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_450
+			AOTR_LAND_MOVEMENT_WALKER_LARGE
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_1500
+			AOTR_LAND_FOW_600
+			AOTR_ABILITY_MISSILE_SHIELD_LAND
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_LIGHTVEHICLE_2
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ataa.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+		<Build_Time_Seconds>107</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+		<Company_Units>
+            AT_AA_Walker_level_1,
+            AT_AA_Walker_level_1
+        </Company_Units>
+		<Formation_Priority>5</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_ATAA_lvl1</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_ATAA_lvl1</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>26</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+
+	<GroundCompany Name="Imperial_Anti_Aircraft_Company_level_2">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_IMPERIALATAA_2_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_ANTI_AIR
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            AOTR_IMPERIALATAA_2_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_ATMAA
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_500
+			AOTR_LAND_MOVEMENT_WALKER_LARGE
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_1000
+			AOTR_LAND_FOW_600
+			AOTR_ABILITY_MISSILE_SHIELD_LAND
+			AOTR_GROUND_ABILITIES_FIRE_SMARTMISSILES
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_LIGHTVEHICLE_3
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_ATMAA.TGA</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1800</Build_Cost_Credits>
+		<Build_Time_Seconds>120</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+		<Company_Units>
+            AT_AA_Walker_level_2,
+            AT_AA_Walker_level_2
+        </Company_Units>
+		<Formation_Priority>5</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_AT_AA</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_AA</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>900</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Imperial_Artillery_Corp">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_SPHAT_WALKER_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+			AOTR_LAND_ROLE_INDIRECT_ARTILLERY
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_SPMA
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1
+            AOTR_LAND_WEAPONS_SPMAT
+			AOTR_LAND_ARMOR_VL
+			AOTR_LAND_HEALTH_300
+			AOTR_LAND_MOVEMENT_WALKER_LARGE
+			AOTR_LAND_SPEED_5
+			AOTR_LAND_RANGE_1200
+			AOTR_LAND_FOW_400
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_HEAVYVEHICLE_2
+	BLACKBURN_NUMBER_6
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_spha_t.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>4000</Build_Cost_Credits>
+		<Build_Time_Seconds>267</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Advanced_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+		<Company_Units>
+            SPMAT_Walker
+        </Company_Units>
+		<Formation_Priority>6</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_SPMAT</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_SPMAT</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1750</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>58</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Imperial_Gunship_Wing">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_TEXT_IDT_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_GUNSHIP
+			AOTR_LAND_ROLE_CAS_DROPSHIP
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_IDT_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_IDT
+			AOTR_LAND_ARMOR_AL
+			AOTR_LAND_HEALTH_200
+			AOTR_LAND_MOVEMENT_HOVER_FLYING_STRAFING
+			AOTR_LAND_SPEED_30
+			AOTR_LAND_RANGE_575
+			AOTR_LAND_FOW_500
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_AIR_1
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+		<Icon_Name>I_Button_IDT.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Advanced_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>LAAT_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>
+            IDT,
+            IDT
+        </Company_Units>
+		<Formation_Priority>4</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>IDT_Build_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>IDT_Fleet_Move</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>2100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>70</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+    
+	<GroundCompany Name="TIE_Crawler_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_TIE_CRAWLER</Text_ID>
+		<Encyclopedia_Text>	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_tie_crawler.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+		<Build_Time_Seconds>47</Build_Time_Seconds>
+		<Tech_Level>99</Tech_Level>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+		<Company_Units>
+			TIE_Crawler,
+			TIE_Crawler,
+			TIE_Crawler,
+			TIE_Crawler,
+			TIE_Crawler
+		</Company_Units>
+		<Formation_Priority>1</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Mauler</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Tie_Mauler</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>24</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+    <GroundCompany Name="E_Century_Tank_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_TEXT_UNIT_CENTURY_TANK_COMPANY</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_TANK_DESTROYER
+            AOTR_MANUFACTURER_SIENAR
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_UNIT_CENTURY_TANK_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_COMPOSITION_CENTURY_TANK
+            AOTR_LAND_WEAPON_CENTURY_TANK_HEAVY
+            AOTR_LAND_WEAPON_CENTURY_TANK_MEDIUM
+			AOTR_TEXT_EMPTY
+			AOTR_LAND_ARMOR_VL
+			AOTR_LAND_HEALTH_250
+			AOTR_LAND_MOVEMENT_TRACKED
+			AOTR_LAND_SPEED_15
+			AOTR_LAND_RANGE_725
+			AOTR_LAND_FOW_400
+            AOTR_ABILITY_TURBO_LAND
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_Century_Tank_Heavy.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>2400</Build_Cost_Credits>
+		<Build_Time_Seconds>160</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_2</Required_Special_Structures>
+        <Tech_Level>4</Tech_Level>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Gozanti_Cruiser_Tie</Company_Transport_Unit>
+		<Company_Units>
+            E_Century_Tank_Heavy,
+            E_Century_Tank_Medium,
+            E_Century_Tank_Medium
+        </Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_TIE_Fighter</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+
+	<GroundCompany Name="Empire_Land_Squadron_1">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_TIE_FIGHTER_LAND_SQUADRON</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_AIRCRAFT
+			AOTR_LAND_ROLE_CAS
+            AOTR_MANUFACTURER_SIENAR
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_TIE_FIGHTER_LAND
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4
+            AOTR_LAND_WEAPONS_TIE_FIGHTER
+			AOTR_LAND_ARMOR_AL
+			AOTR_LAND_HEALTH_40
+			AOTR_LAND_MOVEMENT_FLYING
+			AOTR_LAND_SPEED_65
+			AOTR_LAND_RANGE_575
+			AOTR_LAND_FOW_450
+            AOTR_ABILITY_BURST_FIRE
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_AIRCRAFT</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_tie_fighter.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>1600</Build_Cost_Credits>
+		<Build_Time_Seconds>107</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Advanced_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Gozanti_Cruiser_Tie</Company_Transport_Unit>
+		<Company_Units>
+            Tie_Fighter_Land,
+            Tie_Fighter_Land,
+            Tie_Fighter_Land,
+            Tie_Fighter_Land
+        </Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Tie_Fighter</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Move_TIE_Fighter</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites />
+	</GroundCompany>
+
+    <GroundCompany Name="Empire_TIE_Striker_Squadron">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_TIE_STRIKER_SQAUDRON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_AIRCRAFT
+			AOTR_LAND_ROLE_STRIKE_FIGHTER
+            AOTR_MANUFACTURER_SIENAR
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_TIE_STRIKER
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_TIE_STRIKER
+            AOTR_LAND_ARMOR_AL
+            AOTR_LAND_HEALTH_80
+            AOTR_LAND_MOVEMENT_FLYING
+            AOTR_LAND_SPEED_70
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_450
+            AOTR_ABILITY_OPEN_PROTON_BOMB_SHUTE
+            AOTR_ABILITY_BURST_FIRE
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_AIR_1
+	BLACKBURN_NUMBER_5.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_AIRCRAFT</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_tie_striker.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>3600</Build_Cost_Credits>
+        <Build_Time_Seconds>240</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Factory_Advanced_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Gozanti_Cruiser_Tie</Company_Transport_Unit>
+        <Company_Units>
+            Tie_Striker_Land,
+            Tie_Striker_Land
+        </Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Tie_Interceptor</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Move_TIE_Interceptor</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1800</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+	<GroundCompany Name="Empire_TX130_Group">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>AOTR_TEXT_TX130_ARMOR_GROUP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_MBT
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOL_TX130
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_TX130
+			AOTR_LAND_SHIELD_TYPE_AL
+			AOTR_LAND_SHIELD_100
+			AOTR_LAND_ARMOR_VL
+			AOTR_LAND_HEALTH_200
+			AOTR_LAND_MOVEMENT_HOVER_STRAFING
+			AOTR_LAND_SPEED_25
+			AOTR_LAND_RANGE_600
+			AOTR_LAND_FOW_500
+            AOTR_ABILITY_POWER_TO_WEAPONS
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_LIGHTVEHICLE_2
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name> I_BUTTON_TX130.tga </Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>2250</Build_Cost_Credits>
+		<Build_Time_Seconds>150</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Gozanti_Cruiser_TX130</Company_Transport_Unit>
+		<Company_Units>
+            TX_130_Tank,
+            TX_130_Tank
+        </Company_Units>
+		<Formation_Priority>3</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1125</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>37</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+	<GroundCompany Name="Empire_M1_Tank_Group">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_1M_REPULSOR_TANK_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+			AOTR_LAND_ROLE_MBT
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_M1_REPULSOR
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_2M
+			AOTR_LAND_SHIELD_TYPE_AH
+			AOTR_LAND_SHIELD_150
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_300
+			AOTR_LAND_MOVEMENT_HOVER_STRAFING
+			AOTR_LAND_SPEED_20
+			AOTR_LAND_RANGE_600
+			AOTR_LAND_FOW_500
+            AOTR_ABILITY_OVERCHARGE_LAND
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_LIGHTVEHICLE_3
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_1-m_med_repulsor_tank.tga</Icon_Name>
+
+		<Affiliation>Empire</Affiliation>
+		<Build_Cost_Credits>3000</Build_Cost_Credits>
+		<Build_Time_Seconds>200</Build_Time_Seconds>
+		<Required_Special_Structures>Empire_Factory_Normal_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+		<Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+		<Company_Units>
+            M1_Repulsor_Tank,
+            M1_Repulsor_Tank
+        </Company_Units>
+		<Formation_Priority>3</Formation_Priority>
+
+		<SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+
+		<Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</GroundCompany>
+
+    <HeroCompany Name="Empire_Field">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_IMPERIALFIELD_TXT</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_GENERAL_L1_TOOL
+            AOTR_LAND_CLASS_INF_COMMANDER
+			AOTR_LAND_ROLE_COMBAT_SUPPORT
+			AOTR_TEXT_EMPTY
+            AOTR_IMPERIALFIELD_TOOL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1_6
+            AOTR_COMPOSITION_FIELD_COMMANDER_EMPIRE
+            AOTR_LAND_HEALTH_20
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_550
+			AOTR_LAND_FOW_600
+            AOTR_ABILITY_FIRE_COMMAND
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_5
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_COMMANDER</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_EMPIRE_FIELD.TGA</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>3000</Build_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+        <Required_Special_Structures>Moffs_Palace</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+		<Is_Generic_Hero>Yes</Is_Generic_Hero>
+
+		<Company_Transport_Unit>Imperial_Gozanti_Cruiser_Tie</Company_Transport_Unit>
+        <Company_Units>
+            Empire_Field_Spawner
+		</Company_Units>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Select_Empire_Field</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Empire_Field</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>29</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </HeroCompany>
+    <HeroCompany Name="Empire_Field_Dummy">
+        <Variant_Of_Existing_Type>Empire_Field</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+       
+        <Company_Units>
+            Generic_Field_Commander_Empire,
+            Squad_E_Field_Commander_Guard,
+            Squad_E_Field_Commander_Guard,
+            Squad_E_Field_Commander_Guard,
+            Squad_E_Field_Commander_ENGINEER,
+            Squad_E_Field_Commander_MEDIC
+        </Company_Units>
+        <Max_Squad_Size>6</Max_Squad_Size>
+        <Create_Team_Type> Empire_Field_Commander_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </HeroCompany>
+
+    <HeroCompany Name="Field_Com_Empire_Team"> 
+        <Variant_Of_Existing_Type>Empire_Field</Variant_Of_Existing_Type>
+        <Build_Initially_Locked>Yes</Build_Initially_Locked>
+        <Tech_Level>99</Tech_Level>
+    </HeroCompany>
+
+    <GroundCompany Name="HAV_Juggernaut_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_JUGGERNAUT_TEAM</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+			AOTR_LAND_ROLE_BREAKTHROUGH_APC
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_JUGGERNAUT
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1
+            AOTR_LAND_WEAPONS_JUGGERNAUT
+			AOTR_LAND_ARMOR_VH
+			AOTR_LAND_HEALTH_1000
+			AOTR_LAND_MOVEMENT_WHEELER
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_650
+			AOTR_LAND_FOW_700
+            AOTR_ABILITY_LASER_DEFENSE_LAND
+	BLACKBURN_NUMBER_6
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_ev_juggernaut.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>4000</Build_Cost_Credits>
+        <Build_Time_Seconds>267</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Factory_Advanced_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Gozanti_Cruiser_Juggernaut</Company_Transport_Unit>
+        <Company_Units>
+            HAV_Juggernaut
+        </Company_Units>
+		<Formation_Priority>3</Formation_Priority>
+
+        <SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Juggernaut</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>2000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>66</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="Lancet_Air_Wing">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_IMPERIAL_LANCET_WING</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_GUNSHIP
+			AOTR_LAND_ROLE_DEMOLITIONS
+            AOTR_MANUFACTURER_SIENAR
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_LANCET
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_LANCET
+			AOTR_LAND_ARMOR_AL
+			AOTR_LAND_HEALTH_200
+			AOTR_LAND_MOVEMENT_HOVER_FLYING_STRAFING
+			AOTR_LAND_SPEED_30
+			AOTR_LAND_RANGE_575
+			AOTR_LAND_FOW_500
+	BLACKBURN_NUMBER_6
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_GUNSHIP</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_ev_tie_lancet.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Tech_Level>4</Tech_Level>
+        <Build_Cost_Credits>4200</Build_Cost_Credits>
+		<Build_Time_Seconds>280</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Factory_Advanced_Level_2</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+			Lancet_Air_Artillery,
+			Lancet_Air_Artillery
+		</Company_Units>
+		<Formation_Priority>6</Formation_Priority>
+
+        <SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Lancet</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Lancet</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1100</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="Noghri_Assassin_Squad">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_NOGHRI_ASSASSIN_SQUAD</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_ELITE
+			AOTR_LAND_ROLE_ANTI_ARMOR_COVERT
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_NOGHRI_ASSASSIN
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1_8
+            AOTR_COMPOSITION_NOGHRI_ASSASSIN
+            AOTR_LAND_HEALTH_20
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_350
+			AOTR_LAND_FOW_300
+            AOTR_ABILITY_STEALTH
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_3
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_ELITE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_noghri_comp.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1400</Build_Cost_Credits>
+        <Build_Time_Seconds>87</Build_Time_Seconds>
+        <Required_Planets>Honoghr, Honoghr_Web, Honoghr_Big</Required_Planets>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+        <Company_Units>
+            Noghri_Assassin_Squad_Spawner
+		</Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Noghri</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Noghri</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>41</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>RC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Noghri_Assassin_Squad_Dummy">
+        <Variant_Of_Existing_Type>Noghri_Assassin_Squad</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Noghri_Assassin_Sergeant,
+            Noghri_Assassin_Stun_Grenade,
+            Noghri_Assassin,
+            Noghri_Assassin_Stun_Grenade,
+            Noghri_Assassin,
+            Noghri_Assassin_Frag_Grenade,
+            Noghri_Assassin,
+            Noghri_Assassin_Frag_Grenade
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type>Noghri_Assasin_Team</Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Empire_At_Dp">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_IMPERIAL_ATDP_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_LT_TANK_DESTROYER
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_ATDP
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4
+            AOTR_LAND_WEAPONS_ATDP
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_200
+			AOTR_LAND_MOVEMENT_WALKER
+			AOTR_LAND_SPEED_8
+			AOTR_LAND_RANGE_650
+			AOTR_LAND_FOW_600
+			AOTR_ABILITY_STABILITY_FIRE
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_atdp.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1600</Build_Cost_Credits>
+        <Build_Time_Seconds>107</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Factory_Normal_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Gozanti_Cruiser_ATDP</Company_Transport_Unit>
+        <Company_Units>
+            AT_DP_Walker,
+            AT_DP_Walker,
+            AT_DP_Walker,
+            AT_DP_Walker
+        </Company_Units>
+		<Formation_Priority>1</Formation_Priority>
+
+        <SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>650</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>21</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="Empire_AT_DT_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_AT_DT_WALKER_COMP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_DIRECT_ARTILLERY
+            AOTR_MANUFACTURER_KDY
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_ATDT
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_ATDT
+			AOTR_LAND_ARMOR_VO
+			AOTR_LAND_HEALTH_250
+			AOTR_LAND_MOVEMENT_WALKER
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_1000
+			AOTR_LAND_FOW_600
+            AOTR_ABILITY_STABILITY_FIRE
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_HEAVYVEHICLE_1
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_atdt.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>2500</Build_Cost_Credits>
+        <Build_Time_Seconds>167</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Factory_Advanced_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Loader_Craft</Company_Transport_Unit>
+        <Company_Units>
+            AT_DT_Walker,
+            AT_DT_Walker
+        </Company_Units>
+		<Formation_Priority>1</Formation_Priority>
+
+        <SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_AT_ST</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_AT_ST</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>42</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="Imperial_Troop_Transport_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_IMPERIAL_ITT_GROUP</Text_ID>
+		<Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_APC
+            AOTR_MANUFACTURER_UBRIKKIAN
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_ITT
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_ITT
+			AOTR_LAND_ARMOR_VL
+			AOTR_LAND_HEALTH_250
+			AOTR_LAND_MOVEMENT_HOVER
+			AOTR_LAND_SPEED_30
+			AOTR_LAND_RANGE_575
+			AOTR_LAND_FOW_450
+            AOTR_ABILITY_AMMO_CONTAINER
+            AOTR_ABILITY_TURBO_LAND
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_LIGHTVEHICLE_1
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_ITT.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1400</Build_Cost_Credits>
+        <Build_Time_Seconds>93</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Factory_Normal_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            ITT,
+            ITT,
+            ITT
+        </Company_Units>
+		<Formation_Priority>3</Formation_Priority>
+
+        <SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_2M_Tank</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_2M_Tank</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="TX225_Occupier_Tank_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_TX225_COMP</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_ENGINEERING_VEHICLE
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            AOTR_TOOLTIP_UNIT_TX225
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_TX225
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_150
+			AOTR_LAND_MOVEMENT_TRACKED
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_600
+			AOTR_LAND_FOW_400
+            AOTR_ABILITY_BUILD_PAD
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_GROUND_E_LIGHTVEHICLE_1
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_tx225.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>2000</Build_Cost_Credits>
+        <Build_Time_Seconds>133</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Factory_Normal_Level_1</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            TX225_Occupier_Tank,
+            TX225_Occupier_Tank
+        </Company_Units>
+        <Formation_Priority>3</Formation_Priority>
+
+        <SFXEvent_Build_Started>EHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_T3H_Tank</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Select_T3H_Tank</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>25</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+	
+    <GroundCompany Name="Storm_Commando_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_STORM_COMMANDO_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_COMMANDS_IEC
+            AOTR_LAND_CLASS_INF_ELITE
+			AOTR_LAND_ROLE_ANTI_PERSONNEL_COVERT
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_STORM_COMMANDO_PLATOON
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1_8
+            AOTR_COMPOSITION_STORM_COMMANDO
+            AOTR_LAND_SHIELD_TYPE_I
+			AOTR_LAND_SHIELD_15
+			AOTR_LAND_HEALTH_20
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_800
+			AOTR_LAND_FOW_800
+            AOTR_ABILITY_STEALTH
+            AOTR_ABILITY_FIRING_POSITION
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_4
+            AOTR_TECH_GROUND_E_INFANTRY_3
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_ELITE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_STORM_COMMANDO_COMP.tga</Icon_Name>
+		
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1800</Build_Cost_Credits>
+        <Build_Time_Seconds>120</Build_Time_Seconds>
+        <Tech_Level>0</Tech_Level>
+		<Required_Special_Structures>Empire_Barracks_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Escort_Frigate_Transport</Company_Transport_Unit>
+		<Company_Units>
+            Storm_Commando_Platoon_Spawner
+		</Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Rebel_Infiltrator</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+    </GroundCompany>
+    <GroundCompany Name="Storm_Commando_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Storm_Commando_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Storm_Commando_Lieutenant
+            Storm_Commando_Sniper
+            Storm_Commando_Rifle_Ion
+            Storm_Commando_Sniper
+            Storm_Commando_Rifle_Thermal
+            Storm_Commando_Flash
+            Storm_Commando_Rifle_Thermal
+            Storm_Commando_Sniper
+        </Company_Units>
+        <Create_Team_Type>Storm_Commando_Team</Create_Team_Type>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Storm_Commando_Demolition_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_STORM_COMMANDO_DEMOLITION_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_COMMANDS_IEC
+            AOTR_LAND_CLASS_INF_ELITE
+            AOTR_LAND_ROLE_DEMOLITIONS_ANTI_ARMOR_COVERT
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_STORM_COMMANDO_DEMOLITION_PLATOON
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1_7
+            AOTR_COMPOSITION_STORM_COMMANDO_DEMOLITION
+            AOTR_LAND_SHIELD_TYPE_I
+			AOTR_LAND_SHIELD_15
+			AOTR_LAND_HEALTH_20
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_500
+			AOTR_LAND_FOW_300
+            AOTR_ABILITY_STEALTH
+            AOTR_ABILITY_FIRING_POSITION
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_3
+            AOTR_TECH_GROUND_E_INFANTRY_3
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_ELITE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_STORM_COMMANDO_DEMOLITION_COMP.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>1900</Build_Cost_Credits>
+        <Build_Time_Seconds>127</Build_Time_Seconds>
+        <Tech_Level>0</Tech_Level>
+        <Required_Special_Structures>Empire_Barracks_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Imperial_Escort_Frigate_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Storm_Commando_Demolition_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Rebel_Infiltrator</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit>
+    </GroundCompany>
+    <GroundCompany Name="Storm_Commando_Demolition_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Storm_Commando_Demolition_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Storm_Commando_Sergeant
+            Storm_Commando_Proton
+            Storm_Commando_Assault_Rocket
+            Storm_Commando_Proton
+            Storm_Commando_Saboteur_Concussion
+            Storm_Commando_Assault_Rocket
+            Storm_Commando_Saboteur_Concussion
+        </Company_Units>
+        <Create_Team_Type>Storm_Commando_Demolition_Team</Create_Team_Type>
+        <Max_Squad_Size> 7 </Max_Squad_Size>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Death_Trooper_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_DEATH_TROOPER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_ELITE
+			AOTR_LAND_ROLE_RANGER
+			AOTR_TEXT_EMPTY
+			AOTR_TEXT_DEATH_TROOPER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_6
+            AOTR_COMPOSITION_DEATH_TROOPER
+            AOTR_LAND_HEALTH_35
+			AOTR_LAND_SPEED_7
+			AOTR_LAND_RANGE_600
+			AOTR_LAND_FOW_250
+            AOTR_ABILITY_FIRING_POSITION
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_5
+            AOTR_TECH_GROUND_E_INFANTRY_3
+	BLACKBURN_NUMBER_4
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_EMPIRE_DEATHTROOPER.tga</Icon_Name>
+
+        <Affiliation>Empire</Affiliation>
+        <Build_Cost_Credits>2750</Build_Cost_Credits>
+        <Build_Time_Seconds>183</Build_Time_Seconds>
+        <Required_Special_Structures>Empire_Barracks_Level_3</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Tie_Reaper_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Death_Trooper_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>EHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>EHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Death_Trooper</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Death_Trooper</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1875</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>91</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>EC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Death_Trooper_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Death_Trooper_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Death_Trooper
+            Death_Trooper_Heavy
+            Death_Trooper
+            Death_Trooper_Heavy
+            Death_Trooper
+            Death_Trooper_Lieutenant
+
+            Death_Trooper
+            Death_Trooper_Heavy
+            Death_Trooper
+            Death_Trooper_Heavy
+            Death_Trooper
+            Death_Trooper_Sergeant
+
+            Death_Trooper
+            Death_Trooper_Heavy
+            Death_Trooper
+            Death_Trooper_Heavy
+            Death_Trooper
+            Death_Trooper_Sergeant
+        </Company_Units>
+        <Create_Team_Type>Death_Trooper_Team</Create_Team_Type>
+        <Max_Squad_Size> 6 </Max_Squad_Size>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+</EmpireGroundCompanies>

@@ -39,6 +39,7 @@ files = [
 ]
 
 # Ensure the path does not end with a backslash
+#прога должна получить путь по которому находится ехе программы. если это не айди аотра - exit
 path = r'C:\Steam\steamapps\workshop\content\32470\1397421866\Data\XML'
 
 for xml in files:
@@ -57,26 +58,35 @@ for xml in files:
         root = tree.getroot()
 
         for child in root:
-            name_attr = child.attrib.get('Name', "")
-            if '_Dummy' not in name_attr and '_Death_Clone' not in name_attr:
+            name_attrib = child.attrib.get('Name', "")
+            if '_Dummy' not in name_attrib and '_Death_Clone' not in name_attrib:
                 for element in child.iter('Build_Time_Seconds'):
                     seconds = int(element.text)
+                    # Calculate the number of weeks, adjusting and applying the ceiling to half-week precision
                     rounded_weeks = math.ceil((seconds / 45) * 2 - 0.5) / 2
                     if rounded_weeks % 1 == 0:
                         rounded_weeks = str(int(rounded_weeks))
                     else:
                         rounded_weeks = str(rounded_weeks)
-                    for enc_element in child.iter('Encyclopedia_Text'):
-                        if enc_element.text:
-                            enc_element.text += f"\tBLACKBURN_NUMBER_{rounded_weeks}\n\t\t"
-                        else:
-                            enc_element.text = f"\t{rounded_weeks}\n\t\t"
-                            # make raise error
 
-        tree.write(file_path)
+                    enc_element = child.find('Encyclopedia_Text')
+                    if enc_element is not None and enc_element.text:
+                        # Split the text into lines
+                        lines = enc_element.text.splitlines()
+                        lines.pop()
+                        # Check if the last line contains BLACKBURN_NUMBER and remove it if it does
+                        if lines and 'BLACKBURN_NUMBER' in lines[-1]:
+                            lines.pop()
+                        # Join the filtered lines back into a single string
+                        lines.append(f"\tBLACKBURN_NUMBER_{rounded_weeks}\n\t\t")
+                        enc_element.text = "\n".join(lines)
+
+
+        #будет tree.write(file_path) а пока
+        tree.write(xml)
     except ET.ParseError as e:
         print(f"Error parsing file {file_path}: {e}")
     except Exception as e:
         print(f"Error processing file {file_path}: {e}")
 
-
+#Error processing file C:\Steam\steamapps\workshop\content\32470\1397421866\Data\XML\SPECIALSTRUCTURES_Shared.XML: invalid literal for int() with base 10: '37.5'

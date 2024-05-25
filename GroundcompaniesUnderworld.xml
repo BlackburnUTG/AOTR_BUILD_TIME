@@ -1,0 +1,3122 @@
+<UnderworldGroundCompanies>
+    <GroundCompany Name="B2_Super_Battle_Droid_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>SAU_TEXT_UNIT_SUPERBD</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+			AOTR_LAND_ROLE_ANTI_PERSONNEL
+            AOTR_MANUFACTURER_BAKTOID
+            AOTR_TEXT_EMPTY
+            SAU_TEXT_TOOLTIP_SUPERBD
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_B2_SUPER_BATTLEDROID
+            AOTR_LAND_ARMOR_D
+            AOTR_LAND_HEALTH_20
+            AOTR_LAND_SPEED_5
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_2
+	BLACKBURN_NUMBER_1.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_SBD.tga</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>900</Build_Cost_Credits>
+        <Build_Time_Seconds>60</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>39</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>39</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            B2_Super_Battle_Droid_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Unit</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Battle_Droid</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Move_Battle_Droid</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>450</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="B2_Super_Battle_Droid_Platoon_Dummy">
+        <Variant_Of_Existing_Type>B2_Super_Battle_Droid_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid_Rocketeer,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid_Rocketeer,
+
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid_Rocketeer,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid_Rocketeer,
+
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid_Rocketeer,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid,
+            B2_Super_Battle_Droid_Rocketeer
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> B2_Super_Battle_Droid_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="B1_Battle_Droid_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>SAU_TEXT_UNIT_STORMTROOPER</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+			AOTR_LAND_ROLE_CANNON_FODDER
+            AOTR_MANUFACTURER_BAKTOID
+            AOTR_TEXT_EMPTY
+            SAU_TEXT_TOOLTIP_DROID
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_5_12
+            AOTR_COMPOSITION_B1_BATTLEDROID
+            AOTR_LAND_ARMOR_D
+            AOTR_LAND_HEALTH_5
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_100
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_1
+	BLACKBURN_NUMBER_0.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_DROID</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_BATTLEDROID.TGA</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>250</Build_Cost_Credits>
+        <Build_Time_Seconds>17</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>24</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>24</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            B1_Battle_Droid_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Unit</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Battle_Droid</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Move_Battle_Droid</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>125</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>8</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="B1_Battle_Droid_Platoon_Dummy">
+        <Variant_Of_Existing_Type>B1_Battle_Droid_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            B1_Battle_Droid_OOM, B1_Battle_Droid_Sergeant,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+
+            B1_Battle_Droid_Sergeant, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+
+            B1_Battle_Droid_Sergeant, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+
+            B1_Battle_Droid_Sergeant, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+
+            B1_Battle_Droid_Sergeant, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+            B1_Battle_Droid, B1_Battle_Droid,
+        </Company_Units>
+        <Max_Squad_Size> 12 </Max_Squad_Size>
+        <Create_Team_Type> B1_Battle_Droid_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="U_IG86_Assasin_Droid_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_IG86_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+            AOTR_LAND_ROLE_RANGER
+            AOTR_MANUFACTURER_HOLOWAN
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_UNIT_IG86_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_IG86
+            AOTR_LAND_ARMOR_D
+            AOTR_LAND_HEALTH_25
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_800
+            AOTR_LAND_FOW_400
+            AOTR_SPACE_ABILITIES_TARGET_LOCK_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_3
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_IG86.TGA</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>1500</Build_Cost_Credits>
+        <Build_Time_Seconds>100</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>24</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>24</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            U_IG86_Assasin_Droid_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Unit</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_IG88</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_IG88</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>2500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>60</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="U_IG86_Assasin_Droid_Platoon_Dummy">
+        <Variant_Of_Existing_Type>U_IG86_Assasin_Droid_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Carbine,
+            IG86_Assasin_Droid_Stun,
+            IG86_Assasin_Droid_Carbine,
+            IG86_Assasin_Droid_Poison,
+
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Carbine,
+            IG86_Assasin_Droid_Stun,
+            IG86_Assasin_Droid_Carbine,
+            IG86_Assasin_Droid_Poison,
+
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Sniper, 
+            IG86_Assasin_Droid_Carbine,
+            IG86_Assasin_Droid_Stun,
+            IG86_Assasin_Droid_Carbine,
+            IG86_Assasin_Droid_Poison,
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> U_IG86_Assasin_Droid_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_AAT_Group">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>SAU_TEXT_AAT_ARMOR_GROUP</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_MBT
+            AOTR_MANUFACTURER_BAKTOID
+			AOTR_TEXT_EMPTY
+            SAU_TEXT_TOOLTIP_AAT_REPULSOR
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_AAT
+            AOTR_LAND_ARMOR_VM
+            AOTR_LAND_HEALTH_400
+            AOTR_LAND_MOVEMENT_HOVER_STRAFING
+            AOTR_LAND_SPEED_25
+            AOTR_LAND_RANGE_650
+            AOTR_LAND_FOW_500
+            AOTR_ABILITY_BM_OVERCHARGE_LAND
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_AAT_TANK.tga</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>2250</Build_Cost_Credits>
+        <Build_Time_Seconds>150</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>41</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>41</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            AAT_Repulsor_Tank,
+            AAT_Repulsor_Tank
+        </Company_Units>
+        <Formation_Priority>3</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_AAT_Repulsor_Tank</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_AAT_Repulsor_Tank</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>36</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+
+    <GroundCompany Name="Underworld_Pod_Walker_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_POD_WALKER_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+			AOTR_LAND_ROLE_TANK_DESTROYER
+            AOTR_MANUFACTURER_ROTHANA
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_PODWALKER
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_ATAP
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_450
+			AOTR_LAND_MOVEMENT_WALKER_LARGE
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_800
+			AOTR_LAND_FOW_600
+			AOTR_ABILITY_STABILITY_FIRE_BM
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_pod_walker.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2500</Build_Cost_Credits>
+        <Build_Time_Seconds>167</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>48</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>48</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Pod_Walker,
+            Pod_Walker
+        </Company_Units>
+        <Formation_Priority>3</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Pod_Walker</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Move_Pod_Walker</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>41</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+
+    <GroundCompany Name="Underworld_Skiff_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_SKIFF_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_SKIFF_COMPANY
+            AOTR_MANUFACTURER_UBRIKKIAN
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_SKIFF_COMPANY_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4
+            AOTR_COMPOSITION_SKIFF
+            AOTR_LAND_WEAPONS_SKIFF
+            AOTR_LAND_WEAPONS_SKIFF_ROCKET
+            AOTR_LAND_WEAPONS_SKIFF_MINIGUN
+            AOTR_TEXT_EMPTY
+            AOTR_LAND_ARMOR_VO
+			AOTR_LAND_HEALTH_150
+			AOTR_LAND_MOVEMENT_HOVER
+			AOTR_LAND_SPEED_30
+			AOTR_LAND_RANGE_600
+			AOTR_LAND_FOW_450
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_SKIFF_COMPANY
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_SKIFF.TGA</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>1200</Build_Cost_Credits>
+        <Build_Time_Seconds>80</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>32</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>32</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Skiff,
+            Missile_Skiff,
+            Minigun_Skiff,
+            Skiff,
+        </Company_Units>
+        <Formation_Priority>3</Formation_Priority>
+
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_Skiff</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Skiff</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>600</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="Mandalorian_Merc_Squad">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_MANDALORIAN_MERC_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_ANTI_PERSONNEL_DEMOLITIONS
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_UNIT_U_MANDALORIAN_MERC_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_7
+            AOTR_COMPOSITION_MANDALORIAN_MERCENARY
+            AOTR_LAND_HEALTH_20
+            AOTR_LAND_SPEED_26
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_250
+            AOTR_LAND_MOVEMENT_FLYING
+            AOTR_ABILITY_FIRE_JETPACK_ROCKETS
+            AOTR_ABILITY_BESKAR_ARMOR
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_ZANN_3
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_TRAINED </Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_UI_MANDORED.TGA</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2250</Build_Cost_Credits>
+        <Build_Time_Seconds>150</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>40</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>40</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Komrk_Fighter</Company_Transport_Unit>
+        <Company_Units>
+            Mandalorian_Merc_Squad_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Assault_Squad</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1125</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>56</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Mandalorian_Merc_Squad_Dummy">
+        <Variant_Of_Existing_Type>Mandalorian_Merc_Squad</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Mandalorian_Merc,
+            Mandalorian_Merc,
+            Mandalorian_Merc,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Lieutenant,
+
+            Mandalorian_Merc,
+            Mandalorian_Merc,
+            Mandalorian_Merc,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Sergeant,
+
+            Mandalorian_Merc,
+            Mandalorian_Merc,
+            Mandalorian_Merc,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Thermal_Detonator,
+            Mandalorian_Merc_Sergeant,
+        </Company_Units>
+        <Max_Squad_Size> 7 </Max_Squad_Size>
+        <Create_Team_Type> Mandalorian_Merc_Squad_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Canderous_Assault_Tank_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_CANDEROUS_TANK_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+            AOTR_LAND_ROLE_LIGHT_TANK_AA_DISABLER_BM
+            AOTR_MANUFACTURER_MANDAL_HYPER
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_TEXT_UNIT_CANDEROUS_TANK
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_CANDEROUS
+            AOTR_LAND_ARMOR_VH
+            AOTR_LAND_HEALTH_400
+            AOTR_LAND_MOVEMENT_HOVER
+            AOTR_LAND_SPEED_20
+            AOTR_LAND_RANGE_725
+            AOTR_LAND_FOW_500
+            AOTR_GROUND_ABILITIES_CARBONITE_AMMO
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_ZANN_2
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_uv_cander_tank.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2500</Build_Cost_Credits>
+        <Build_Time_Seconds>167</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>90</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>90</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Canderous_Assault_Tank,
+            Canderous_Assault_Tank
+        </Company_Units>
+        <Formation_Priority>2</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Canderous_Tank</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>41</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="Kedalbe_Tank_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_KEDALBETANK_COMP</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+            AOTR_LAND_ROLE_MBT
+            AOTR_MANUFACTURER_MANDAL_HYPER
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_KEDALBETANK
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_KEDALBE_TANK
+            AOTR_LAND_ARMOR_VH
+            AOTR_LAND_HEALTH_500
+            AOTR_LAND_MOVEMENT_HOVER
+            AOTR_LAND_SPEED_20
+            AOTR_LAND_RANGE_800
+            AOTR_LAND_FOW_500
+            AOTR_ABILITY_DEPLOY_KEDA
+            AOTR_SPACE_ABILITIES_BRACE_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_ZANN_3
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_kedatank.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>3000</Build_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>90</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>90</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Kedalbe_Tank,
+            Kedalbe_Tank
+        </Company_Units>
+        <Formation_Priority>2</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Canderous_Tank</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="Destroyer_Droid_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_DESTROYER_DROID_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+            AOTR_LAND_ROLE_ANTI_PERSONNEL_SUPPRESSION
+            AOTR_MANUFACTURER_COLICOID
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_DESTROYER_DROID
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_6
+            AOTR_LAND_WEAPONS_DROIDEKA
+            AOTR_LAND_SHIELD_TYPE_D_I
+            AOTR_LAND_SHIELD_50
+            AOTR_LAND_ARMOR_D
+            AOTR_LAND_HEALTH_30
+            AOTR_LAND_SPEED_25
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_300
+            AOTR_ABILITY_TURBO_LAND
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_2
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_INF_DROID</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_UI_DROIDEKA.TGA</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>1200</Build_Cost_Credits>
+        <Build_Time_Seconds>80</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>39</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>39</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Destroyer_Droid, Destroyer_Droid, Destroyer_Droid,
+            Destroyer_Droid, Destroyer_Droid, Destroyer_Droid,
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Unit</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Destroyer_Droid</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>37</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="Destroyer_Droid_Company_2">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_DESTROYER_DROID_2_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_SML_VEHICLE
+            AOTR_LAND_ROLE_LT_TANK_DESTROYER_DISABLER
+            AOTR_MANUFACTURER_COLICOID
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_DESTROYER_DROID_2
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_DESTROYER_DROID_2
+            AOTR_LAND_SHIELD_TYPE_D_AM
+            AOTR_LAND_SHIELD_100
+            AOTR_LAND_ARMOR_VL
+            AOTR_LAND_HEALTH_60
+            AOTR_LAND_SPEED_15
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_300
+            AOTR_SPACE_ABILITIES_DEFENSIVE_SHIELD_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_3
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_SML_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_UI_DROIDEKA_2.TGA</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>1500</Build_Cost_Credits>
+        <Build_Time_Seconds>100</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>39</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>39</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Destroyer_Droid_2, Destroyer_Droid_2, Destroyer_Droid_2
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Unit</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Destroyer_Droid</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Destroyer_Droid</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>37</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_Field">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_UNIT_FIELD_UNDERWORLD</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_GENERAL_L1_TOOL
+            AOTR_LAND_CLASS_INF_COMMANDER
+            AOTR_LAND_ROLE_COMBAT_SUPPORT
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_FIELD_COMMANDER_UNDERWORLD
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1_6
+            AOTR_COMPOSITION_FIELD_COMMANDER_UNDERWORLD
+            AOTR_LAND_HEALTH_25
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_550
+			AOTR_LAND_FOW_600
+            AOTR_ABILITY_FIRE_COMMAND
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_5
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FIELD_COMMANDER</Encyclopedia_Unit_Class>
+        <Icon_Name>Labansat.TGA</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>3000</Build_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+        <Build_Tab_Heroes>Yes</Build_Tab_Heroes>
+        <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Cheap_Bribe_Cost>76</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>76</Expensive_Bribe_Cost>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Underworld_Field_Spawner
+        </Company_Units>
+        <Is_Generic_Hero>Yes</Is_Generic_Hero>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Pirate_Soldier</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Pirate_Soldier</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>13</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="Underworld_Field_Dummy">
+        <Variant_Of_Existing_Type>Underworld_Field</Variant_Of_Existing_Type>
+
+        <Affiliation>Hostile</Affiliation>
+        <Company_Units>
+            Generic_Field_Commander_Underworld,
+            Squad_UW_Field_Commander_Guard,
+            Squad_UW_Field_Commander_Guard,
+            Squad_UW_Field_Commander_Guard,
+            Squad_UW_Field_Commander_Guard,
+            Squad_UW_Field_Commander_MEDIC
+        </Company_Units>
+        <Max_Squad_Size>6</Max_Squad_Size>
+        <Create_Team_Type> UW_Field_Commander_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_Disruptor_Merc_Squad">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_UNDERWORLD_DISRUPTOR_MERC_SQUAD</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_ANTI_ARMOR
+            AOTR_TEXT_EMPTY
+            TEXT_UNIT_UNDERWORLD_DISRUPTOR_MERC_ENCYC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_DISRUPTOR_MERCENARY
+            AOTR_LAND_HEALTH_15
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_400
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_FIRING_POSITION
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_ZANN_2
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_TRAINED </Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_UI_BLASTER_INFANTRY.TGA</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2000</Build_Cost_Credits>
+        <Build_Time_Seconds>133</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>54</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>54</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Underworld_Disruptor_Merc_Squad_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Assault_Squad</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Squad</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Underworld_Disruptor_Merc_Squad_Dummy">
+        <Variant_Of_Existing_Type>Underworld_Disruptor_Merc_Squad</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Disruptor_Rifle_Merc_Rodian,
+            Disruptor_Pistol_Merc_Nikto_Flash,
+            Disruptor_Rifle_Merc_Human,
+            Disruptor_Pistol_Merc_Rodian,
+            Disruptor_Rifle_Merc_Nikto,
+            Disruptor_Pistol_Merc_Human,
+            Disruptor_Rifle_Merc_Rodian,
+            Disruptor_Pistol_Merc_Lieutenant,
+
+            Disruptor_Rifle_Merc_Human,
+            Disruptor_Pistol_Merc_Rodian,
+            Disruptor_Rifle_Merc_Rodian,
+            Disruptor_Pistol_Merc_Nikto_Flash,
+            Disruptor_Rifle_Merc_Nikto,
+            Disruptor_Pistol_Merc_Human,
+            Disruptor_Rifle_Merc_Nikto,
+            Disruptor_Pistol_Merc_Sergeant,
+
+            Disruptor_Rifle_Merc_Nikto,
+            Disruptor_Pistol_Merc_Human,
+            Disruptor_Rifle_Merc_Human,
+            Disruptor_Pistol_Merc_Rodian,
+            Disruptor_Rifle_Merc_Rodian,
+            Disruptor_Pistol_Merc_Nikto_Flash,
+            Disruptor_Rifle_Merc_Nikto,
+            Disruptor_Pistol_Merc_Sergeant,
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Underworld_Disruptor_Merc_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_PirateSoldier_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_PIRATE_SOLDIER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_BASIC
+            AOTR_LAND_ROLE_FRONT_LINE
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_UNIT_U_PIRATE_SOLDIER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4_10
+            AOTR_COMPOSITION_PIRATE_SOLDIER
+            AOTR_LAND_HEALTH_10
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_STIM_PACK_BM
+            AOTR_ABILITY_SPREAD_OUT
+	BLACKBURN_NUMBER_0.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_BASIC </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_underworld_pirate_platoon.tga</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>500</Build_Cost_Credits>
+        <Build_Time_Seconds>33</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>29</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>29</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Underworld_PirateSoldier_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_Gangster</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Gangster</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="Underworld_PirateSoldier_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Underworld_PirateSoldier_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Pirate_Soldier,
+            Pirate_Soldier_Glop_Grenade,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier_Klatooinian_Rifleman,
+            Pirate_Soldier_Gunner,
+            Pirate_Soldier,
+            Pirate_Soldier_Rifleman,
+            Pirate_Soldier_Klatooinian_Gunner,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier_Sergeant,
+
+            Pirate_Soldier,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier,
+            Pirate_Soldier_Klatooinian_Rifleman,
+            Pirate_Soldier_Gunner,
+            Pirate_Soldier_Rifleman,
+            Pirate_Soldier_Klatooinian_Gunner,
+            Pirate_Soldier_Glop_Grenade,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier_Sergeant,
+
+            Pirate_Soldier,
+            Pirate_Soldier_Glop_Grenade,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier_Klatooinian_Rifleman,
+            Pirate_Soldier_Gunner,
+            Pirate_Soldier_Rifleman,
+            Pirate_Soldier_Klatooinian_Gunner,
+            Pirate_Soldier,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier,
+
+            Pirate_Soldier,
+            Pirate_Soldier_Glop_Grenade,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier_Klatooinian_Rifleman,
+            Pirate_Soldier_Gunner,
+            Pirate_Soldier_Rifleman,
+            Pirate_Soldier_Klatooinian_Gunner,
+            Pirate_Soldier,
+            Pirate_Soldier_Nikto_01,
+            Pirate_Soldier_Lieutenant,
+        </Company_Units>
+        <Max_Squad_Size> 10 </Max_Squad_Size>
+        <Create_Team_Type> Underworld_PirateSoldier_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_PirateSoldier_Grenadier_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_PIRATE_GRENADIER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_BASIC
+            AOTR_LAND_ROLE_ANTI_PERSONNEL
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_UNIT_U_PIRATE_GRENADIER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_PIRATE_GRENADIER
+            AOTR_LAND_HEALTH_10
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_GAS_GRENADES
+            AOTR_ABILITY_SPREAD_OUT
+	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_BASIC </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_underworld_pirate_grenadier.tga</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>650</Build_Cost_Credits>
+        <Build_Time_Seconds>43</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>29</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>29</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Underworld_PirateSoldier_Grenadier_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_Gangster_Grenadier</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Gangster_Grenadier</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>425</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="Underworld_PirateSoldier_Grenadier_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Underworld_PirateSoldier_Grenadier_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Pirate_Soldier_Switch_Nikto_02,
+            Pirate_Soldier_Switch,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Switch_Nikto_01,
+            Pirate_Soldier_Switch_Klatooinian,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Lieutenant_Switch,
+
+            Pirate_Soldier_Switch_Nikto_02,
+            Pirate_Soldier_Switch,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Switch_Klatooinian,
+            Pirate_Soldier_Switch_Nikto_01,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Sergeant_Switch,
+
+            Pirate_Soldier_Switch_Nikto_02,
+            Pirate_Soldier_Switch,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Switch_Klatooinian,
+            Pirate_Soldier_Switch_Nikto_01,
+            Pirate_Soldier_Grenadier,
+            Pirate_Soldier_Sergeant_Switch,
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Underworld_PirateSoldier_Grenadier_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_PirateSoldier_AntiArmor_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_PIRATE_ROCKETEER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_BASIC
+            AOTR_LAND_ROLE_ANTI_ARMOR
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_UNIT_U_PIRATE_ROCKETEER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2_6
+            AOTR_COMPOSITION_PIRATE_ROCKETEER
+            AOTR_LAND_HEALTH_10
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_INCINERATOR_ROCKET
+            AOTR_ABILITY_SPREAD_OUT
+	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_BASIC </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_underworld_pirate_rocketeer.tga</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>750</Build_Cost_Credits>
+        <Build_Time_Seconds>50</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>29</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>29</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Underworld_PirateSoldier_AntiArmor_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_Gangster_Rocketeer</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Gangster_Rocketeer</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>475</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="Underworld_PirateSoldier_AntiArmor_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Underworld_PirateSoldier_AntiArmor_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Pirate_Soldier_Rocketeer,
+            Pirate_Soldier_Switch2_Klatooinian,
+            Pirate_Soldier_Rocketeer,
+            Pirate_Soldier_Switch2_Nikto,
+            Pirate_Soldier_Rocketeer,
+            Pirate_Soldier_Sergeant_Rocket,
+
+            Pirate_Soldier_Rocketeer,
+            Pirate_Soldier_Switch2_Klatooinian,
+            Pirate_Soldier_Rocketeer,
+            Pirate_Soldier_Switch2_Nikto,
+            Pirate_Soldier_Rocketeer,
+            Pirate_Soldier_Switch2,
+        </Company_Units>
+        <Max_Squad_Size> 6 </Max_Squad_Size>
+        <Create_Team_Type> Underworld_PirateSoldier_AntiArmor_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    
+    <GroundCompany Name="Underworld_PirateSoldier_AntiInfantry_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_PIRATE_GUNNER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_TEXT_UNIT_U_PIRATE_GUNNER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_PIRATE_GUNNER
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_STIM_PACK_BM
+            AOTR_ABILITY_SPREAD_OUT
+	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_underworld_pirate_rifle.tga</Icon_Name>
+
+        <Affiliation>Neutral</Affiliation>
+        <Build_Cost_Credits>800</Build_Cost_Credits>
+        <Build_Time_Seconds>53</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>29</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>29</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Underworld_PirateSoldier_AntiInfantry_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_Gangster_Gunner</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Gangster_Gunner</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>400</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="Underworld_PirateSoldier_AntiInfantry_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Underworld_PirateSoldier_AntiInfantry_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Suppr,
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Sergeant_Suppr,
+
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Suppr,
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Sergeant_Suppr,
+
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Suppr,
+            Pirate_Soldier_Rifleman_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Gunner_Suppr,
+            Pirate_Soldier_Lieutenant_Suppr,
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Underworld_PirateSoldier_AntiInfantry_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_Land_Squadron_1">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_KIHRAXZ_FIGHTER_SQUADRON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_AIRCRAFT
+            AOTR_LAND_ROLE_STRIKE_FIGHTER
+            AOTR_MANUFACTURER_TRANSGALMEG
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_KIHRAXZ_FIGHTER
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_KIHRAXZ
+            AOTR_LAND_SHIELD_TYPE_AIR
+            AOTR_LAND_SHIELD_60
+            AOTR_LAND_ARMOR_VL
+            AOTR_LAND_HEALTH_90
+            AOTR_LAND_MOVEMENT_FLYING
+            AOTR_LAND_SPEED_70
+            AOTR_LAND_RANGE_550
+            AOTR_LAND_FOW_450
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_XIZOR_3
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_AIRCRAFT</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_Kihraxz_mkI_01.tga</Icon_Name>
+
+        <Affiliation>Underworld, Pirates</Affiliation>
+        <Build_Cost_Credits>3200</Build_Cost_Credits>
+        <Build_Time_Seconds>213</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>63</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>63</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Kihraxz_mkI_01,
+            Kihraxz_mkI_01
+        </Company_Units>
+        <Formation_Priority>2</Formation_Priority>
+
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>53</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="MAL_Rocket_Vehicle_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_MAL_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_LRG_VEHICLE
+            AOTR_LAND_ROLE_INDIRECT_ARTILLERY
+            AOTR_MANUFACTURER_MERR_SONN
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_MAL
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1
+            AOTR_LAND_WEAPONS_MAL
+            AOTR_LAND_ARMOR_VL
+            AOTR_LAND_HEALTH_300
+            AOTR_LAND_MOVEMENT_HOVER
+            AOTR_LAND_SPEED_20
+            AOTR_LAND_RANGE_1200
+            AOTR_LAND_FOW_450
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_ZANN_3
+	BLACKBURN_NUMBER_5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_LRG_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_uv_mal.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>3500</Build_Cost_Credits>
+        <Build_Time_Seconds>233</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>103</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>103</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            MAL_Rocket_Vehicle
+        </Company_Units>
+        <Formation_Priority>1</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Missile_Launcher</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Missile_Launcher</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1750</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>58</Tactical_Build_Time_Seconds>
+        
+    </GroundCompany>
+
+    <GroundCompany Name="U_Morningstar_B_Land_Squadron">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_MORNINGSTAR_B_GROUND_SQUADRON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_AIRCRAFT
+            AOTR_LAND_ROLE_CAS
+            AOTR_MANUFACTURER_KSE
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_MORNINGSTAR_B_GROUND
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_MORNINGSTAR
+            AOTR_LAND_SHIELD_TYPE_AIR
+            AOTR_LAND_SHIELD_25
+            AOTR_LAND_ARMOR_AL
+            AOTR_LAND_HEALTH_75
+            AOTR_LAND_MOVEMENT_FLYING
+            AOTR_LAND_SPEED_50
+            AOTR_LAND_RANGE_575
+            AOTR_LAND_FOW_450
+            AOTR_ABILITY_POWER_TO_WEAPONS
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_XIZOR_2
+	BLACKBURN_NUMBER_4.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_AIRCRAFT </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_morningstar_B.tga</Icon_Name>
+
+        <Affiliation>Underworld, Hutts, CSA, Hapans</Affiliation>
+        <Build_Cost_Credits>3000</Build_Cost_Credits>
+        <Build_Time_Seconds>200</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>103</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>103</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            U_Morningstar_B_Groundfighter,
+            U_Morningstar_B_Groundfighter
+        </Company_Units>
+        <Formation_Priority>1</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>50</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="T_16_Skyhopper_Land_Squadron">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_T_16_GROUND_SQUADRON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_AIRCRAFT
+            AOTR_LAND_ROLE_STRIKE_FIGHTER_DISABLER
+            AOTR_MANUFACTURER_INCOM
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_T_16_GROUND
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_T16
+            AOTR_TEXT_EMPTY
+            AOTR_LAND_ARMOR_AL
+            AOTR_LAND_HEALTH_80
+            AOTR_LAND_MOVEMENT_AIRSPEEDER
+            AOTR_LAND_SPEED_40
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_450
+            AOTR_ABILITY_OVERLOAD_MAIN_WEAPON_BM
+	BLACKBURN_NUMBER_1.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_AIRCRAFT </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_t16.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>900</Build_Cost_Credits>
+        <Build_Time_Seconds>75</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>40</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>40</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            T_16_Skyhopper,
+            T_16_Skyhopper,
+            T_16_Skyhopper
+        </Company_Units>
+        <Formation_Priority>1</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Assault_Speeder</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Assault_Speeder</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>700</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>23</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_Speeder_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_SPEEDER_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_SML_VEHICLE
+			AOTR_LAND_ROLE_IFV
+            AOTR_MANUFACTURER_ARATECH
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_SPEEDER_COMPANY
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_6
+            AOTR_COMPOSITION_SPEEDER
+            AOTR_LAND_WEAPONS_SWAMP_SPEEDER
+            AOTR_LAND_WEAPONS_REVENANT_SPEEDER
+            AOTR_LAND_ARMOR_VO
+			AOTR_LAND_HEALTH_110
+			AOTR_LAND_MOVEMENT_HOVER_STRAFING_SMALL
+			AOTR_LAND_SPEED_35
+			AOTR_LAND_RANGE_550
+			AOTR_LAND_FOW_400
+            AOTR_TEXT_EMPTY
+			AOTR_ABILITY_BM_OVERCHARGE_LAND
+	BLACKBURN_NUMBER_1.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_SML_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_pirate_speeder.tga</Icon_Name>
+
+        <Affiliation>underworld</Affiliation>
+        <Build_Cost_Credits>1050</Build_Cost_Credits>
+        <Build_Time_Seconds>70</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>23</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>23</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            Pirate_Speeder_U,
+            Swamp_Speeder,
+            Pirate_Speeder_U,
+            Swamp_Speeder,
+            Pirate_Speeder_U,
+            Swamp_Speeder
+        </Company_Units>
+        <Formation_Priority>3</Formation_Priority>
+
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_swamp_speeder_BS</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_swamp_speeder_BS</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>525</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>17</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="MZ8_Pulse_Cannon_Tank_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_MZ8_PC_TANK_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+            AOTR_LAND_ROLE_TANK_DESTROYER
+            AOTR_MANUFACTURER_YUTRANE
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_MZ8_PC_TANK
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_MZ8
+            AOTR_LAND_ARMOR_VM
+            AOTR_LAND_HEALTH_350
+            AOTR_LAND_MOVEMENT_TRACKED
+            AOTR_LAND_SPEED_15
+            AOTR_LAND_RANGE_725
+            AOTR_LAND_FOW_450
+            AOTR_SPACE_ABILITIES_ARMOR_PIERCE_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_ZANN_1
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_uv_mz8 pulse cannon.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2000</Build_Cost_Credits>
+        <Build_Time_Seconds>133</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>53</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>53</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            MZ8_Pulse_Cannon_Tank,
+            MZ8_Pulse_Cannon_Tank
+        </Company_Units>
+        <Formation_Priority>2</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Pulse_Cannon</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Pulse_Cannon</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="MZ9_Flame_Tank_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_MZ9_FLAMETANK_COMP</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+            AOTR_LAND_ROLE_DEMOLITIONS
+            AOTR_MANUFACTURER_YUTRANE
+            AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_MZ9_FLAMETANK
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_2
+            AOTR_LAND_WEAPONS_MZ9
+            AOTR_LAND_ARMOR_VM
+            AOTR_LAND_HEALTH_350
+            AOTR_LAND_MOVEMENT_TRACKED
+            AOTR_LAND_SPEED_15
+            AOTR_LAND_RANGE_300
+            AOTR_LAND_FOW_450
+            AOTR_SPACE_ABILITIES_SELFDESTRUCT_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_ZANN_1
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_flametank.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2250</Build_Cost_Credits>
+        <Build_Time_Seconds>150</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>53</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>53</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Tank_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            MZ9_Flame_Tank,
+            MZ9_Flame_Tank
+        </Company_Units>
+        <Formation_Priority>2</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Pulse_Cannon</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Pulse_Cannon</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1125</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>37</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+
+    <GroundCompany Name="Trandoshan_Hunter_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_TRANDOSHAN_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_RANGER
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_TRANDOSHAN
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_6
+            AOTR_COMPOSITION_TRANDOSHAN_HUNTER
+            AOTR_LAND_HEALTH_30
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_700
+            AOTR_ABILITY_HUNTER_INSTINCT
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_XIZOR_2
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_TRAINED </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_trandoshan.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2500</Build_Cost_Credits>
+        <Build_Time_Seconds>167</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>22</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>22</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Trandoshan_Dropship</Company_Transport_Unit>
+        <Company_Units>
+            Trandoshan_Hunter_Company_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Bossk</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Bossk</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>62</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Trandoshan_Hunter_Company_Dummy">
+        <Variant_Of_Existing_Type>Trandoshan_Hunter_Company</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+            Trandoshan_Hunter,
+            Trandoshan_Sniper,
+            Trandoshan_Hunter,
+            Trandoshan_Sniper
+        </Company_Units>
+        <Max_Squad_Size> 6 </Max_Squad_Size>
+        <Create_Team_Type> Trandoshan_Squad_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Black_Sun_Elite_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_BS_ELITE_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_ELITE
+            AOTR_LAND_ROLE_DEMOLITIONS_COVERT
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_UNIT_U_BS_ELITE_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_1_7
+            AOTR_COMPOSITION_BLACK_SUN_ELITE
+            AOTR_LAND_SHIELD_TYPE_I
+            AOTR_LAND_SHIELD_15
+            AOTR_LAND_HEALTH_20
+            AOTR_LAND_SPEED_10
+            AOTR_LAND_RANGE_550
+            AOTR_LAND_FOW_250
+            AOTR_ABILITY_STEALTH
+            AOTR_ABILITY_FIRING_POSITION
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_XIZOR_3
+            TEXT_AOTR_BUILD_LIMIT_4
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_ELITE </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_underworld_black_sun_elite_COMP.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2200</Build_Cost_Credits>
+        <Build_Time_Seconds>147</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>22</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>22</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Black_Sun_Elite_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Rebel_Infiltrator</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>75</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Black_Sun_Elite_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Black_Sun_Elite_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Black_Sun_Elite_Gunner,
+            Black_Sun_Elite_Disruptor,
+            Black_Sun_Elite_Gunner,
+            Black_Sun_Elite,
+            Black_Sun_Elite_Concussion,
+            Black_Sun_Elite_Disruptor,
+            Black_Sun_Elite_Sergeant,
+        </Company_Units>
+        <Max_Squad_Size> 7 </Max_Squad_Size>
+        <Create_Team_Type> Black_Sun_Elite_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Black_Sun_Enforcer_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_BS_ENFORCER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_COMBAT_SUPPORT
+            AOTR_TEXT_EMPTY
+			AOTR_TEXT_UNIT_U_BS_ENFORCER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_BLACK_SUN_ENFORCER
+            AOTR_LAND_HEALTH_15
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_500
+            AOTR_LAND_FOW_250
+            AOTR_ABILITY_FIRE_COMMAND
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_XIZOR_1
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_TRAINED </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_u_black_sun_enforcer.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>1600</Build_Cost_Credits>
+        <Build_Time_Seconds>107</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>22</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>22</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Black_Sun_Enforcer_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Rebel_Infiltrator</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>40</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Black_Sun_Enforcer_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Black_Sun_Enforcer_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer_Lieutenant
+
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer_Sergeant
+
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer
+            Black_Sun_Enforcer_Sergeant
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Black_Sun_Enforcer_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Rodian_Hunter_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_RODIAN_HUNTER_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_ANTI_PERSONNEL
+            AOTR_TEXT_EMPTY
+			AOTR_TEXT_UNIT_RODIAN_HUNTER_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_RODIAN_HUNTER
+            AOTR_LAND_SHIELD_TYPE_I
+            AOTR_LAND_SHIELD_10
+            AOTR_LAND_HEALTH_15
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_TAKE_COVER
+	BLACKBURN_NUMBER_1.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_TRAINED </Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_Rodian_Hunter.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>1100</Build_Cost_Credits>
+        <Build_Time_Seconds>73</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>22</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>22</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Rodian_Hunter_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Rebel_Infiltrator</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>27</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="Rodian_Hunter_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Rodian_Hunter_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Rodian_Hunter_Lieutenant
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+
+            Rodian_Hunter_Sergeant
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+
+            Rodian_Hunter_Sergeant
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+            Rodian_Hunter_Stun
+            Rodian_Hunter
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Rodian_Hunter_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="N_Pyke_Elite_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_PYKE_ELITE_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_ANTI_PERSONNEL
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_PYKE_ELITE
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_PYKE_ELITE
+            AOTR_LAND_SHIELD_TYPE_I
+            AOTR_LAND_SHIELD_10
+            AOTR_LAND_HEALTH_10
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_200
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_ABILITY_SPRINT
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_TRAINED </Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_Pyke_Elite.TGA</Icon_Name>
+
+        <Affiliation>Neutral</Affiliation>
+        <Build_Cost_Credits>1200</Build_Cost_Credits>
+        <Build_Time_Seconds>80</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>22</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>22</Expensive_Bribe_Cost>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Pyke_Transport</Company_Transport_Unit>
+        <Company_Units>
+            U_Pyke_Elite_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Rebel_Infiltrator</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Rebel_Infiltrator</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>550</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>27</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="U_Pyke_Elite_Platoon">
+        <Variant_Of_Existing_Type>N_Pyke_Elite_Platoon</Variant_Of_Existing_Type>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_ANTI_PERSONNEL
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_PYKE_ELITE
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_8
+            AOTR_COMPOSITION_PYKE_ELITE
+            AOTR_LAND_SHIELD_TYPE_I
+            AOTR_LAND_SHIELD_10
+            AOTR_LAND_HEALTH_10
+            AOTR_LAND_SPEED_7
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_200
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_ABILITY_SPRINT
+            AOTR_TEXT_EMPTY
+			TEXT_AOTR_BUILD_LIMIT_5
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>1200</Build_Cost_Credits>
+        <Build_Time_Seconds>80</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>22</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>22</Expensive_Bribe_Cost>
+        <Required_Planets>Oba_Diah, Oba_Diah_Web, Oba_Diah_Big</Required_Planets>
+    </GroundCompany>
+    <GroundCompany Name="U_Pyke_Elite_Platoon_Dummy">
+        <Variant_Of_Existing_Type>U_Pyke_Elite_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            U_Pyke_Elite_Lieutenant
+            U_Pyke_Elite_Stun
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite_Stun
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite
+
+            U_Pyke_Elite_Sergeant
+            U_Pyke_Elite_Stun
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite_Stun
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite
+
+            U_Pyke_Elite_Sergeant
+            U_Pyke_Elite_Stun
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite_Stun
+            U_Pyke_Elite_Rifle
+            U_Pyke_Elite
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> U_Pyke_Elite_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Kaleesh_Warrior_Platoon">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_U_KALEESH_WARRIOR_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_CQC
+            AOTR_TEXT_EMPTY
+			AOTR_TEXT_UNIT_U_KALEESH_WARRIOR_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_7
+            AOTR_COMPOSITION_KALEESH_WARRIOR
+            AOTR_LAND_HEALTH_20
+            AOTR_LAND_SPEED_10
+            AOTR_LAND_RANGE_450
+            AOTR_LAND_FOW_250
+            AOTR_ABILITY_RUSH_DOWN
+            AOTR_ABILITY_TAKE_COVER
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_XIZOR_1
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_TRAINED </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_u_kaleesh.tga</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>1500</Build_Cost_Credits>
+        <Build_Time_Seconds>100</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>22</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>22</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Kaleesh_Warrior_Platoon_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Noghri</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Noghri</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>750</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>37</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Kaleesh_Warrior_Platoon_Dummy">
+        <Variant_Of_Existing_Type>Kaleesh_Warrior_Platoon</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Kaleesh_Warrior_Leader
+            Kaleesh_Warrior
+            Kaleesh_Warrior_Stun_Grenade
+            Kaleesh_Warrior
+            Kaleesh_Warrior_Stun_Grenade
+            Kaleesh_Warrior
+            Kaleesh_Warrior
+
+            Kaleesh_Warrior_Leader
+            Kaleesh_Warrior
+            Kaleesh_Warrior_Stun_Grenade
+            Kaleesh_Warrior
+            Kaleesh_Warrior_Stun_Grenade
+            Kaleesh_Warrior
+            Kaleesh_Warrior
+
+            Kaleesh_Warrior_Leader
+            Kaleesh_Warrior
+            Kaleesh_Warrior_Stun_Grenade
+            Kaleesh_Warrior
+            Kaleesh_Warrior_Stun_Grenade
+            Kaleesh_Warrior
+            Kaleesh_Warrior
+        </Company_Units>
+        <Max_Squad_Size> 7 </Max_Squad_Size>
+        <Create_Team_Type> Kaleesh_Warrior_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="WLO5_Tank_Company">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_WLO5_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+            AOTR_LAND_ROLE_LIGHT_TANK
+            AOTR_MANUFACTURER_UBRIKKIAN
+            AOTR_TEXT_EMPTY
+            TEXT_UNIT_WLO5_ENC
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_WLO5
+            AOTR_TEXT_EMPTY
+            AOTR_LAND_ARMOR_VL
+            AOTR_LAND_HEALTH_250
+            AOTR_LAND_MOVEMENT_HOVER_STRAFING
+            AOTR_LAND_SPEED_25
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_450
+			AOTR_SPACE_ABILITIES_BRACE_BM
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name> i_button_WLO5.tga </Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>1600</Build_Cost_Credits>
+        <Build_Time_Seconds>107</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>65</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>65</Expensive_Bribe_Cost>
+        <Required_Special_Structures>Black_Market</Required_Special_Structures>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>
+            WLO5_Tank,
+            WLO5_Tank,
+            WLO5_Tank
+        </Company_Units>
+        <Formation_Priority>2</Formation_Priority>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Build_Complete_WLO5_Tank</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_WLO5_Tank</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>800</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>26</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+
+    <GroundCompany Name="Nightsister_Hunting_Party">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_NIGHTSISTER_HUNTING_PARTY</Text_ID>
+        <Encyclopedia_Text>
+            TEXT_TOOLTIP_NIGHTSISTER_HUNTER
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_7
+            AOTR_COMPOSITION_NIGHTSISTER_HUNTER
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_DRAIN_LIFE
+            AOTR_ABILITY_RUSH_DOWN
+            AOTR_TEXT_EMPTY
+            TEXT_AOTR_BUILD_LIMIT_5
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+        <Icon_Name>I_Button_Nightsister_Hunter_Party.TGA</Icon_Name>
+
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>2100</Build_Cost_Credits>
+        <Build_Time_Seconds>140</Build_Time_Seconds>
+        <Cheap_Bribe_Cost>46</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>46</Expensive_Bribe_Cost>
+        <Required_Planets>Dathomir, Dathomir_Web, Dathomir_Big</Required_Planets>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Nightsister_Hunting_Party_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Night_Sister</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Night_Sister</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>455</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>22</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+    </GroundCompany>
+    <GroundCompany Name="Nightsister_Hunting_Party_Dummy">
+        <Variant_Of_Existing_Type>Nightsister_Hunting_Party</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+            Nightsister_Hunter,
+        </Company_Units>
+        <Max_Squad_Size> 7 </Max_Squad_Size>
+        <Create_Team_Type> Nightsister_Hunter_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Gamorrean_Guard_Escort">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_UNIT_GAMORREAN_GUARD_PLATOON</Text_ID>
+        <Encyclopedia_Text>
+            TEXT_TOOLTIP_GAMORREAN_GUARD
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4_8
+            AOTR_COMPOSITION_GAMORREAN_GUARD
+            AOTR_TEXT_EMPTY
+            AOTR_ABILITY_RUSH_DOWN
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+        <Icon_Name>I_Button_Gamorrean_Guard_Escort.tga</Icon_Name>
+
+        <Affiliation>Hutts</Affiliation>
+        <Build_Cost_Credits>1500</Build_Cost_Credits>
+        <Build_Time_Seconds>90</Build_Time_Seconds>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>Minor_Barracks_Hutts</Required_Special_Structures>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Gamorrean_Guard_Escort_Spawner
+        </Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Chatter_Gamorrean</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Chatter_Gamorrean</SFXEvent_Fleet_Move>
+
+        <Tactical_Build_Cost_Multiplayer>300</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+    </GroundCompany>
+    <GroundCompany Name="U_Gamorrean_Guard_Escort">
+        <Variant_Of_Existing_Type>Gamorrean_Guard_Escort</Variant_Of_Existing_Type>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_HEAVY
+			AOTR_LAND_ROLE_CQC
+			AOTR_TEXT_EMPTY
+            TEXT_TOOLTIP_GAMORREAN_GUARD
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_4_8
+            AOTR_COMPOSITION_GAMORREAN_GUARD
+            AOTR_LAND_HEALTH_50
+            AOTR_LAND_SPEED_6
+            AOTR_LAND_RANGE_35
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_RUSH_DOWN
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_HUTTS_1
+        </Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> AOTR_LAND_CLASS_INF_HEAVY </Encyclopedia_Unit_Class>
+
+        <Affiliation>Underworld</Affiliation>
+        <Required_Special_Structures>U_Hutt_Palace</Required_Special_Structures>
+    </GroundCompany>
+    <GroundCompany Name="Gamorrean_Guard_Escort_Dummy">
+        <Variant_Of_Existing_Type>Gamorrean_Guard_Escort</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_01,
+
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_03,
+
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_01,
+
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_02,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_01,
+            Gamorrean_Guard_03,
+            Gamorrean_Guard_03
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Gamorrean_Guard_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+
+    <GroundCompany Name="U_Security_Droid_Company">
+        <Variant_Of_Existing_Type>Hutt_Security_Droid_Company</Variant_Of_Existing_Type>
+        
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_DROID
+			AOTR_LAND_ROLE_CQC_SUPPRESSION
+            AOTR_MANUFACTURER_SECURITECH
+			AOTR_TEXT_EMPTY
+            DT_TOOLTIP_HUTT_GUARD
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_6
+            AOTR_COMPOSITION_HUTT_SECURITY_DROID
+            AOTR_LAND_ARMOR_D
+            AOTR_LAND_HEALTH_60
+            AOTR_LAND_SPEED_9
+            AOTR_LAND_RANGE_600
+            AOTR_LAND_FOW_400
+            AOTR_ABILITY_SPRINT
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_HUTTS_2
+        </Encyclopedia_Text>
+
+        <Affiliation>Underworld</Affiliation>
+        <Required_Special_Structures>U_Hutt_Palace</Required_Special_Structures>
+    </GroundCompany>
+
+    <GroundCompany Name="U_Security_Droid_Company_Dummy">
+        <Variant_Of_Existing_Type>U_Security_Droid_Company</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Hutt_Security_Droid, Hutt_Security_Droid,
+            Hutt_Security_Droid, Hutt_Security_Droid,
+            Hutt_Security_Droid, Hutt_Security_Droid,
+
+            Hutt_Security_Droid, Hutt_Security_Droid,
+            Hutt_Security_Droid, Hutt_Security_Droid,
+            Hutt_Security_Droid, Hutt_Security_Droid,
+
+            Hutt_Security_Droid, Hutt_Security_Droid,
+            Hutt_Security_Droid, Hutt_Security_Droid,
+            Hutt_Security_Droid, Hutt_Security_Droid
+
+        </Company_Units>
+        <Max_Squad_Size> 6 </Max_Squad_Size>
+        <Create_Team_Type> Hutt_Security_Droid_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Beast_Master_Escort_Dummy">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            U_Beast_Master,
+            Pirate_Soldier_Rifleman_Beast,
+            Pirate_Soldier_Beast,
+            Pirate_Soldier_Rifleman_Beast,
+            Pirate_Soldier_Beast,
+            Pirate_Soldier_Beast,
+            Pirate_Soldier_Rifleman_Beast,
+            Pirate_Soldier_Beast,
+        </Company_Units>
+        <Max_Squad_Size> 8 </Max_Squad_Size>
+        <Create_Team_Type> Beast_Master_Team </Create_Team_Type>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="H_Beast_Master_AntiInfantry">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_BEAST_MASTER_ANTIINFANTRY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_BEAST_HANDLER
+            AOTR_TEXT_EMPTY
+            AOTR_LAND_CLASS_INF_BEAST
+            AOTR_LAND_ROLE_CQC
+            AOTR_TEXT_TOOLTIP_BEAST_MASTER_ANTIINFANTRY
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_1_BEAST
+            AOTR_COMPOSITION_BEAST_MASTER_ANTIINFANTRY
+            AOTR_LAND_HEALTH_600
+            AOTR_LAND_SPEED_15
+            AOTR_LAND_RANGE_50
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_HUNTER_INSTINCT
+	BLACKBURN_NUMBER_3
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BEAST </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_acklay.tga</Icon_Name>
+
+        <Affiliation>Hutts</Affiliation>
+
+        <Build_Cost_Credits>2000</Build_Cost_Credits>
+        <Build_Time_Seconds>133</Build_Time_Seconds>
+        <Required_Special_Structures>Minor_Barracks_Hutts</Required_Special_Structures>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Beast_Master_AntiInfantry_Spawner
+        </Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+        <Tech_Level>3</Tech_Level>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Ewok_Handler</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Ewok_Handler</SFXEvent_Fleet_Move>
+
+        <Score_Cost_Credits>25</Score_Cost_Credits>
+        <Population_Value>1</Population_Value>
+
+        
+        <Tactical_Build_Cost_Multiplayer>1300</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>30</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        
+        
+    </GroundCompany>
+    <GroundCompany Name="U_Beast_Master_AntiInfantry">
+        <Variant_Of_Existing_Type>H_Beast_Master_AntiInfantry</Variant_Of_Existing_Type>
+
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_BEAST_HANDLER
+            AOTR_TEXT_EMPTY
+            AOTR_LAND_CLASS_INF_BEAST
+            AOTR_LAND_ROLE_CQC
+            AOTR_TEXT_TOOLTIP_BEAST_MASTER_ANTIINFANTRY
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_1_BEAST
+            AOTR_COMPOSITION_BEAST_MASTER_ANTIINFANTRY
+            AOTR_LAND_HEALTH_600
+            AOTR_LAND_SPEED_15
+            AOTR_LAND_RANGE_50
+            AOTR_LAND_FOW_200
+            AOTR_ABILITY_HUNTER_INSTINCT
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_HUTTS_1
+        </Encyclopedia_Text>
+
+        <Affiliation>Underworld</Affiliation>
+        <Required_Special_Structures>U_Hutt_Palace</Required_Special_Structures>
+    </GroundCompany>
+
+    <GroundCompany Name="Beast_Master_AntiInfantry_Dummy">
+        <Variant_Of_Existing_Type>H_Beast_Master_AntiInfantry</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Beast_Master_Escort_Spawner,
+            Beast_Acklay, Beast_Gizka, Beast_Gizka
+        </Company_Units>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+
+    <GroundCompany Name="H_Beast_Master_AntiVehicle">
+        <Variant_Of_Existing_Type>Company_Template</Variant_Of_Existing_Type>
+        <Text_ID>AOTR_TEXT_UNIT_BEAST_MASTER_ANTIVEHICLE</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_BEAST_HANDLER
+            AOTR_TEXT_EMPTY
+            AOTR_LAND_CLASS_INF_BEAST
+            AOTR_LAND_ROLE_ANTI_ARMOR_DISABLER
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_BEAST_MASTER_ANTIVEHICLE
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_1_BEAST
+            AOTR_COMPOSITION_BEAST_MASTER_ANTIVEHICLE
+            AOTR_LAND_HEALTH_600
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_50
+			AOTR_LAND_FOW_200
+            AOTR_SPACE_ABILITIES_BRACE
+            AOTR_ABILITY_SPRINT
+	BLACKBURN_NUMBER_3.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_BEAST </Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_rancor.tga</Icon_Name>
+
+        <Affiliation>Hutts</Affiliation>
+
+        <Build_Cost_Credits>2500</Build_Cost_Credits>
+        <Build_Time_Seconds>166</Build_Time_Seconds>
+        <Required_Special_Structures>Minor_Barracks_Hutts</Required_Special_Structures>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>
+            Beast_Master_AntiVehicle_Spawner
+        </Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+        <Tech_Level>3</Tech_Level>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Ewok_Handler</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Ewok_Handler</SFXEvent_Fleet_Move>
+
+        <Score_Cost_Credits>25</Score_Cost_Credits>
+        <Population_Value>1</Population_Value>
+
+        
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        
+        
+    </GroundCompany>
+    <GroundCompany Name="U_Beast_Master_AntiVehicle">
+        <Variant_Of_Existing_Type>H_Beast_Master_AntiVehicle</Variant_Of_Existing_Type>
+
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_INF_TRAINED
+            AOTR_LAND_ROLE_BEAST_HANDLER
+            AOTR_TEXT_EMPTY
+            AOTR_LAND_CLASS_INF_BEAST
+            AOTR_LAND_ROLE_ANTI_ARMOR_DISABLER
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_BEAST_MASTER_ANTIVEHICLE
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3_1_BEAST
+            AOTR_COMPOSITION_BEAST_MASTER_ANTIVEHICLE
+            AOTR_LAND_HEALTH_600
+			AOTR_LAND_SPEED_10
+			AOTR_LAND_RANGE_50
+			AOTR_LAND_FOW_200
+            AOTR_ABILITIES_CHARGE
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_HUTTS_2
+        </Encyclopedia_Text>
+
+        <Affiliation>Underworld</Affiliation>
+        <Required_Special_Structures>U_Hutt_Palace</Required_Special_Structures>
+    </GroundCompany>
+
+    <GroundCompany Name="Beast_Master_AntiVehicle_Dummy">
+        <Variant_Of_Existing_Type>H_Beast_Master_AntiVehicle</Variant_Of_Existing_Type>
+        <Affiliation>Hostile</Affiliation>
+
+        <Company_Units>
+            Beast_Master_Escort_Spawner,
+            Beast_Rancor, Beast_Reek, Beast_Reek
+        </Company_Units>
+        <Population_Value>0</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="Underworld_Ewok_Handler_Company">
+        <Text_ID>TEXT_UNIT_EWOK_HANDLER</Text_ID>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_INFANTRY </Encyclopedia_Unit_Class>
+        <Encyclopedia_Text>	BLACKBURN_NUMBER_0.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Good_Against> Garrison_Bunker_Rebel E_Ground_Turbolaser_Tower Stormtrooper  </Encyclopedia_Good_Against>
+        <Icon_Name>i_button_ewok_handler.tga</Icon_Name>
+
+        <GUI_Row> 0 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Damage>45</Damage>
+        <Autoresolve_Health>135</Autoresolve_Health>
+
+        <Affiliation>Underworld</Affiliation>
+
+        <Build_Cost_Credits>950</Build_Cost_Credits>
+        <Build_Time_Seconds>12</Build_Time_Seconds>
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>No</Build_Tab_Land_Units>
+        <Tech_Level>99</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>1</Formation_Priority>
+        <Is_Escort>yes</Is_Escort>
+        <Ship_Class>infantry</Ship_Class>
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units> Ewok_Handler </Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+
+        <SFXEvent_Build_Started>UHD_Build_Troops</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Recruitment_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Ewok_Handler</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Ewok_Handler</SFXEvent_Fleet_Move>
+
+        <Score_Cost_Credits>25</Score_Cost_Credits>
+        <Population_Value>1</Population_Value>
+
+        
+        <Tactical_Build_Cost_Multiplayer>1250</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>12</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        
+        
+    </GroundCompany>
+
+    <GroundCompany Name="F9TZ_Cloaking_Transport_Company">
+        <Text_ID>TEXT_F9TZ_TRANSPORT_COMPANY</Text_ID>
+        <Encyclopedia_Good_Against> Stormtrooper Rebel_SecForce_MHuman_DH17 </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> T4B_Tank M1_Repulsor_Tank </Encyclopedia_Vulnerable_To>
+        <Encyclopedia_Text>	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_TRANSPORT</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_uv_f9tztransport.tga</Icon_Name>
+
+        <GUI_Row> 1 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Affiliation>Underworld</Affiliation>
+
+        <Damage>1</Damage>
+        <Autoresolve_Health>600</Autoresolve_Health>
+        <Build_Cost_Credits>600</Build_Cost_Credits>
+        <Piracy_Value_Credits>6</Piracy_Value_Credits>
+        <Build_Time_Seconds>37</Build_Time_Seconds>
+        <Score_Cost_Credits>60</Score_Cost_Credits>
+
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <Tech_Level>99</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>Arms_Dealer</Required_Special_Structures>
+        <Required_Planets />
+
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>4</Formation_Priority>
+        <Is_Escort>no</Is_Escort>
+        <Ship_Class>walker</Ship_Class>
+
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>F9TZ_Cloaking_Transport</Company_Units>
+
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+        <Population_Value>1</Population_Value>
+
+        
+        <Tactical_Build_Cost_Multiplayer>1400</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        
+        
+        
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Cloaking_Transport</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Cloaking_Transport</SFXEvent_Fleet_Move>
+
+        
+        <Unit_Abilities_Data SubObjectList="Yes">
+
+            
+            <Unit_Ability>
+                <Type>STEALTH</Type>
+                <Alternate_Icon_Name>i_sa_stealth.tga</Alternate_Icon_Name>
+                <GUI_Activated_Ability_Name>Stealth_F9TZ</GUI_Activated_Ability_Name>
+                <Recharge_Seconds>10.0</Recharge_Seconds>
+                <Expiration_Seconds>120.0</Expiration_Seconds>
+                <SFXEvent_GUI_Unit_Ability_Activated />
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Unit_Ability>
+
+        </Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Stealth_Ability Name="Stealth_F9TZ">
+                <Activation_Style> User_Input </Activation_Style>
+                <Stealth_Color>255, 255, 255, 255</Stealth_Color>
+                <Stealth_Transition_Time>.3</Stealth_Transition_Time>
+                <SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+                <Must_Be_Bought_On_Black_Market>Yes</Must_Be_Bought_On_Black_Market>
+            </Stealth_Ability>
+
+        </Abilities>
+
+    </GroundCompany>
+
+    <GroundCompany Name="Night_Sister_Company">
+        <LOD_Bias>1</LOD_Bias>
+        <GUI_Bounds_Scale>0.3</GUI_Bounds_Scale>
+        <Text_ID>TEXT_UNIT_NIGHT_SISTER</Text_ID>
+        <Encyclopedia_Text>	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Good_Against> T4B_Tank AT_AT_Walker E_Ground_Heavy_Vehicle_Factory </Encyclopedia_Good_Against>
+        <Encyclopedia_Vulnerable_To> Rebel_SecForce_Rocketeer MPTL E_Ground_Turbolaser_Tower </Encyclopedia_Vulnerable_To>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_INFANTRY</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_ui_night_sister.tga</Icon_Name>
+
+        <GUI_Row> 1 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Affiliation>Underworld</Affiliation>
+
+        <Damage>28</Damage>
+        <Autoresolve_Health>600</Autoresolve_Health>
+        <Build_Cost_Credits>950</Build_Cost_Credits>
+        <Piracy_Value_Credits>8</Piracy_Value_Credits>
+        <Build_Time_Seconds>95</Build_Time_Seconds>
+        <Score_Cost_Credits>88</Score_Cost_Credits>
+
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <Tech_Level>0</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+        <Required_Planets>Dathomir, Dathomir_Web, Dathomir_Big</Required_Planets>
+
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>4</Formation_Priority>
+        <Is_Escort>no</Is_Escort>
+        <Ship_Class>walker</Ship_Class>
+
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>Night_Sister</Company_Units>
+
+        <SFXEvent_Build_Started>UHD_Request_Assistance</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Request_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Select_Night_Sister</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Fleet_Move_Night_Sister</SFXEvent_Fleet_Move>
+
+
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+        <Population_Value>1</Population_Value>
+
+        
+        <Tactical_Build_Cost_Multiplayer>1000</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        
+        
+        
+    </GroundCompany>
+
+    <GroundCompany Name="Vornskr_Wolf_Pack">
+        <LOD_Bias>5</LOD_Bias>
+        <Text_ID>TEXT_UNIT_VORNSKR_WOLF_PACK</Text_ID>
+        <Encyclopedia_Text>	BLACKBURN_NUMBER_1
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_BEAST</Encyclopedia_Unit_Class>
+        <Icon_Name>i_button_ui_vornskr.tga</Icon_Name>
+        <GUI_Row> 1 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Affiliation>Underworld</Affiliation>
+
+        <Damage>240</Damage>
+        <Autoresolve_Health>300</Autoresolve_Health>
+        <Build_Cost_Credits>570</Build_Cost_Credits>
+        <Piracy_Value_Credits>5</Piracy_Value_Credits>
+        <Build_Time_Seconds>36</Build_Time_Seconds>
+        <Score_Cost_Credits>57</Score_Cost_Credits>
+        <Cheap_Bribe_Cost>29</Cheap_Bribe_Cost>
+        <Expensive_Bribe_Cost>29</Expensive_Bribe_Cost>
+
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <Tech_Level>99</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>U_Ground_Palace</Required_Special_Structures>
+        <Required_Planets>Myrkr, Myrkr_Web, Myrkr_Big</Required_Planets>
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>1</Formation_Priority>
+        <Is_Escort>yes</Is_Escort>
+        <Ship_Class>infantry</Ship_Class>
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>Vornskr_Wolf, Vornskr_Wolf, Vornskr_Wolf, Vornskr_Wolf, Vornskr_Wolf, Vornskr_Wolf</Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Unit_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Attack_Wolf</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move />
+
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+        <Population_Value>1</Population_Value>
+
+        
+        <Unit_Abilities_Data SubObjectList="Yes">
+            
+            <Unit_Ability>
+                <Type>HUNT</Type>
+                <Alternate_Name_Text>TEXT_TOOLTIP_PROWL</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_PROWL_DESCRIPTION</Alternate_Description_Text>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+
+        
+        <Tactical_Build_Cost_Multiplayer>285</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>18</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        
+        
+        
+
+    </GroundCompany>
+
+    <GroundCompany Name="LR57_Company">
+        <Text_ID>AOTR_TEXT_COMPANY_LR57</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_SML_VEHICLE
+            AOTR_LAND_ROLE_ENTRENCHMENT_SCOUT
+            AOTR_MANUFACTURER_RETAIL
+            AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_COMPANY_LR57
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_6
+            AOTR_LAND_WEAPONS_LR57
+			AOTR_LAND_ARMOR_D
+            AOTR_LAND_HEALTH_150
+            AOTR_LAND_SPEED_4
+            AOTR_LAND_RANGE_575
+            AOTR_LAND_FOW_250
+            AOTR_ABILITY_PROXIMITY_MINE
+            AOTR_ABILITY_ANTENNA
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_1
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_SML_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_LR57.TGA</Icon_Name>
+
+        <GUI_Row> 1 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Damage>18</Damage>
+        <Autoresolve_Health>100</Autoresolve_Health>
+        <Affiliation>Underworld</Affiliation>
+        <Build_Cost_Credits>1200</Build_Cost_Credits>
+        <Piracy_Value_Credits>50</Piracy_Value_Credits>
+        <Build_Time_Seconds>80</Build_Time_Seconds>
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Tech_Level>0</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Required_Planets />
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>3</Formation_Priority>
+        <Is_Escort>yes</Is_Escort>
+        <Ship_Class>walker</Ship_Class>
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>LR57,LR57,LR57,LR57,LR57,LR57</Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>Unit_Complete_Crab</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>Unit_Complete_Crab</SFXEvent_Fleet_Move>
+        <Score_Cost_Credits>600</Score_Cost_Credits>
+        <Unit_Abilities_Data SubObjectList="Yes">
+            
+            <Unit_Ability>
+                <Type>PROXIMITY_MINES</Type>
+                <Recharge_Seconds>80.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> LR57_Proximity </GUI_Activated_Ability_Name>
+                <Effective_Radius> 100.0 </Effective_Radius>
+                <SFXEvent_Target_Ability />
+                <Area_Effect_Decal_Distance> 60.0 </Area_Effect_Decal_Distance>
+            </Unit_Ability>
+        </Unit_Abilities_Data>
+
+        <Abilities SubObjectList="Yes">
+
+            <Proximity_Mines_Ability Name="LR57_Proximity">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>100.0</Activation_Max_Range>
+                <Mine_Type>Proximity_Mine</Mine_Type>
+                <Trigger_Radius>10</Trigger_Radius>
+                <Number_Of_Mines>6</Number_Of_Mines>
+                <Activation_Time_In_Seconds>3</Activation_Time_In_Seconds>
+                <Activate_SFX>Unit_Lightsaber_Projectile_Block</Activate_SFX>
+            </Proximity_Mines_Ability>
+
+        </Abilities>
+        
+        <Tactical_Build_Cost_Multiplayer>1200</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>35</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+        
+        
+        
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+        <Population_Value>1</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="CSA_SD6_Hulk_Droid_Company">
+        <Text_ID>AOTR_TEXT_UNIT_SD6_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_SML_VEHICLE
+			AOTR_LAND_ROLE_ANTI_PERSONNEL_DISABLER
+            AOTR_MANUFACTURER_BALMORRAN
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_UNIT_SD6
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_5
+            AOTR_LAND_WEAPONS_SD6
+			AOTR_LAND_ARMOR_D
+			AOTR_LAND_HEALTH_100
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_575
+			AOTR_LAND_FOW_250
+			AOTR_SPACE_ABILITIES_ION_BARRAGE_BM
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_SML_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_SD6_Droid.TGA</Icon_Name>
+
+        <GUI_Row> 1 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Damage>18</Damage>
+        <Autoresolve_Health>100</Autoresolve_Health>
+        <Affiliation>CSA</Affiliation>
+        <Build_Cost_Credits>1400</Build_Cost_Credits>
+        <Piracy_Value_Credits>50</Piracy_Value_Credits>
+        <Build_Time_Seconds>93</Build_Time_Seconds>
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Tech_Level>0</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures>Minor_Factory_CSA</Required_Special_Structures>
+        <Required_Planets />
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>3</Formation_Priority>
+        <Is_Escort>yes</Is_Escort>
+        <Ship_Class>walker</Ship_Class>
+        <Company_Transport_Unit>Vigo</Company_Transport_Unit>
+        <Company_Units>SD6_Hulk_Droid,SD6_Hulk_Droid,SD6_Hulk_Droid,SD6_Hulk_Droid,SD6_Hulk_Droid</Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>SD6_Build_Complete</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>SD6_Move</SFXEvent_Fleet_Move>
+        <Score_Cost_Credits>600</Score_Cost_Credits>
+
+        <Tactical_Build_Cost_Multiplayer>1400</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>20</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites />
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+        <Population_Value>1</Population_Value>
+    </GroundCompany>
+    <GroundCompany Name="U_SD6_Hulk_Droid_Company">
+        <Variant_Of_Existing_Type>CSA_SD6_Hulk_Droid_Company</Variant_Of_Existing_Type>
+
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_SML_VEHICLE
+			AOTR_LAND_ROLE_ANTI_PERSONNEL_DISABLER
+            AOTR_MANUFACTURER_BALMORRAN
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_UNIT_SD6
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_5
+            AOTR_LAND_WEAPONS_SD6
+			AOTR_LAND_ARMOR_D
+			AOTR_LAND_HEALTH_100
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_575
+			AOTR_LAND_FOW_250
+			AOTR_SPACE_ABILITIES_ION_BARRAGE_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_2
+        </Encyclopedia_Text>
+
+        <Affiliation>Underworld</Affiliation>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+    </GroundCompany>
+
+    <GroundCompany Name="U_GRZ_6B_Droid_Company">
+        <Text_ID>AOTR_TEXT_UNIT_GRZ_6B_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_BREAKTHROUGH_DEMOLITIONS
+            AOTR_MANUFACTURER_SERV_O
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_UNIT_GRZ_6B
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_GRZ_6B
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_400
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_300
+			AOTR_LAND_FOW_250
+			AOTR_SPACE_ABILITIES_BRACE_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_3
+	BLACKBURN_NUMBER_2.5
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_GRZ_6B.TGA</Icon_Name>
+
+        <GUI_Row> 1 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Damage>18</Damage>
+        <Autoresolve_Health>100</Autoresolve_Health>
+        <Affiliation>Underworld</Affiliation>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Build_Cost_Credits>1600</Build_Cost_Credits>
+        <Piracy_Value_Credits>50</Piracy_Value_Credits>
+        <Build_Time_Seconds>107</Build_Time_Seconds>
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Tech_Level>0</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures />
+        <Required_Planets />
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>3</Formation_Priority>
+        <Is_Escort>yes</Is_Escort>
+        <Ship_Class>walker</Ship_Class>
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>GRZ_6B_Droid,GRZ_6B_Droid,GRZ_6B_Droid</Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>GRZ_6B_Build_Complete</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>GRZ_6B_Fleet_Move</SFXEvent_Fleet_Move>
+        <Score_Cost_Credits>600</Score_Cost_Credits>
+
+        <Tactical_Build_Cost_Multiplayer>1600</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+        <Population_Value>1</Population_Value>
+    </GroundCompany>
+
+    <GroundCompany Name="U_CLL_M2_Droid_Company">
+        <Text_ID>AOTR_TEXT_UNIT_CLL_M2_COMPANY</Text_ID>
+        <Encyclopedia_Text>
+            AOTR_LAND_CLASS_MED_VEHICLE
+			AOTR_LAND_ROLE_TANK_DESTROYER
+            AOTR_MANUFACTURER_CYBOT
+			AOTR_TEXT_EMPTY
+            AOTR_TEXT_TOOLTIP_UNIT_CLL_M2
+            AOTR_TEXT_EMPTY
+            AOTR_AMOUNT_3
+            AOTR_LAND_WEAPONS_CLL_M2
+			AOTR_LAND_ARMOR_VM
+			AOTR_LAND_HEALTH_250
+			AOTR_LAND_MOVEMENT_WALKER
+			AOTR_LAND_SPEED_6
+			AOTR_LAND_RANGE_700
+			AOTR_LAND_FOW_400
+			AOTR_ABILITY_STABILITY_FIRE_BM
+            AOTR_TEXT_EMPTY
+            AOTR_TECH_U_IG88_2
+	BLACKBURN_NUMBER_2
+		</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class>AOTR_LAND_CLASS_MED_VEHICLE</Encyclopedia_Unit_Class>
+        <Icon_Name>I_BUTTON_CLL_M2.TGA</Icon_Name>
+
+        <GUI_Row> 1 </GUI_Row>
+        <Is_Dummy>Yes</Is_Dummy>
+        <Damage>18</Damage>
+        <Autoresolve_Health>100</Autoresolve_Health>
+        <Affiliation>Underworld</Affiliation>
+        <Required_Special_Structures>Droid_Factory</Required_Special_Structures>
+        <Build_Cost_Credits>1500</Build_Cost_Credits>
+        <Piracy_Value_Credits>50</Piracy_Value_Credits>
+        <Build_Time_Seconds>100</Build_Time_Seconds>
+        <Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
+        <Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
+        <Build_Initially_Locked>No</Build_Initially_Locked>
+        <Tech_Level>0</Tech_Level>
+        <Required_Timeline>0</Required_Timeline>
+        <Required_Ground_Base_Level>1</Required_Ground_Base_Level>
+        <Required_Star_Base_Level>0</Required_Star_Base_Level>
+        <Required_Special_Structures />
+        <Required_Planets />
+        <Behavior>DUMMY_GROUND_COMPANY</Behavior>
+        <Formation_Priority>3</Formation_Priority>
+        <Is_Escort>yes</Is_Escort>
+        <Ship_Class>walker</Ship_Class>
+        <Company_Transport_Unit>Action_Transport</Company_Transport_Unit>
+        <Company_Units>CLL_M2_Droid,CLL_M2_Droid,CLL_M2_Droid</Company_Units>
+        <Max_Squad_Size> 1 </Max_Squad_Size>
+
+        <SFXEvent_Build_Started>UHD_Build_Vehicle</SFXEvent_Build_Started>
+        <SFXEvent_Build_Cancelled>UHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
+        <SFXEvent_Build_Complete>SD6_Build_Complete</SFXEvent_Build_Complete>
+        <SFXEvent_Fleet_Move>SD6_Move</SFXEvent_Fleet_Move>
+        <Score_Cost_Credits>600</Score_Cost_Credits>
+
+        <Tactical_Build_Cost_Multiplayer>1500</Tactical_Build_Cost_Multiplayer>
+        <Tactical_Build_Time_Seconds>45</Tactical_Build_Time_Seconds>
+        <Tactical_Build_Prerequisites>UC_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+        <Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+        <Maintenance_Cost>0.05</Maintenance_Cost>
+        <Population_Value>1</Population_Value>
+    </GroundCompany>
+</UnderworldGroundCompanies>
