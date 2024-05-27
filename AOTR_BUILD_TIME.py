@@ -38,13 +38,13 @@ files = [
     'STARBASES_SHARED.XML',
 ]
 
-# Ensure the path does not end with a backslash
+
 
 
 aotr_path = os.getcwd()
 #надо вернуть снять комент как будет готово
 # if os.path.basename(aotr_path) != "1397421866":
-#     raise FileNotFoundError("you need to place the file in Aotr directory: 1397421866")
+#     raise FileNotFoundError(r"you need to place the file in Aotr directory: Steam\steamapps\workshop\content\32470\1397421866\")
 
 xml_folder = os.path.join(aotr_path, r"Data\XML")
 for xml in files:
@@ -87,11 +87,10 @@ for xml in files:
                         enc_element.text = "\n".join(lines)
 
 
-        #будет tree.write(file_path) а пока так
-        tree.write(xml)
+        
+        tree.write(xml_file)
     except ET.ParseError as e:
         print(f"Error parsing file {xml_file}: {e}")
     except Exception as e:
         print(f"Error processing file {xml_file}: {e}")
 
-#Error processing file C:\Steam\steamapps\workshop\content\32470\1397421866\Data\XML\SPECIALSTRUCTURES_Shared.XML: invalid literal for int() with base 10: '37.5'
