@@ -39,22 +39,27 @@ files = [
 ]
 
 # Ensure the path does not end with a backslash
-#прога должна получить путь по которому находится ехе программы. если это не айди аотра - exit
-path = r'C:\Steam\steamapps\workshop\content\32470\1397421866\Data\XML'
 
+
+aotr_path = os.getcwd()
+#надо вернуть снять комент как будет готово
+# if os.path.basename(aotr_path) != "1397421866":
+#     raise FileNotFoundError("you need to place the file in Aotr directory: 1397421866")
+
+xml_folder = os.path.join(aotr_path, r"Data\XML")
 for xml in files:
-    file_path = os.path.join(path, xml)
+    xml_file = os.path.join(xml_folder, xml)
     
     # Print the constructed file path for debugging
-    print(f"Processing file: {file_path}")
+    print(f"Processing file: {xml_file}")
     
     # Check if file exists
-    if not os.path.isfile(file_path):
-        print(f"File not found: {file_path}")
+    if not os.path.isfile(xml_file):
+        print(f"File not found: {xml_file}")
         continue
     
     try:
-        tree = ET.parse(file_path)
+        tree = ET.parse(xml_file)
         root = tree.getroot()
 
         for child in root:
@@ -85,8 +90,8 @@ for xml in files:
         #будет tree.write(file_path) а пока так
         tree.write(xml)
     except ET.ParseError as e:
-        print(f"Error parsing file {file_path}: {e}")
+        print(f"Error parsing file {xml_file}: {e}")
     except Exception as e:
-        print(f"Error processing file {file_path}: {e}")
+        print(f"Error processing file {xml_file}: {e}")
 
 #Error processing file C:\Steam\steamapps\workshop\content\32470\1397421866\Data\XML\SPECIALSTRUCTURES_Shared.XML: invalid literal for int() with base 10: '37.5'
