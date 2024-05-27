@@ -61,7 +61,7 @@ for xml in files:
             name_attrib = child.attrib.get('Name', "")
             if '_Dummy' not in name_attrib and '_Death_Clone' not in name_attrib:
                 for element in child.iter('Build_Time_Seconds'):
-                    seconds = int(element.text)
+                    seconds = float(element.text)
                     # Calculate the number of weeks, adjusting and applying the ceiling to half-week precision
                     rounded_weeks = math.ceil((seconds / 45) * 2 - 0.5) / 2
                     if rounded_weeks % 1 == 0:
@@ -74,15 +74,15 @@ for xml in files:
                         # Split the text into lines
                         lines = enc_element.text.splitlines()
                         lines.pop()
-                        # Check if the last line contains BLACKBURN_NUMBER and remove it if it does
-                        if lines and 'BLACKBURN_NUMBER' in lines[-1]:
+                        # Check if the last line contains BLACKBURN_BUILD_TIME_WEEKS and remove it if it does
+                        if lines and 'BLACKBURN_BUILD_TIME_WEEKS' in lines[-1]:
                             lines.pop()
                         # Join the filtered lines back into a single string
-                        lines.append(f"\tBLACKBURN_NUMBER_{rounded_weeks}\n\t\t")
+                        lines.append(f"\t\t\tBLACKBURN_BUILD_TIME_WEEKS_{rounded_weeks}\n\t\t")
                         enc_element.text = "\n".join(lines)
 
 
-        #будет tree.write(file_path) а пока
+        #будет tree.write(file_path) а пока так
         tree.write(xml)
     except ET.ParseError as e:
         print(f"Error parsing file {file_path}: {e}")
