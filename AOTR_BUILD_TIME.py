@@ -1,4 +1,4 @@
-import xml.etree.ElementTree as ET
+from lxml import etree as ET
 import os
 import math
 
@@ -40,28 +40,32 @@ files = [
 
 
 
-
 aotr_path = os.getcwd()
 #надо вернуть снять комент как будет готово
 # if os.path.basename(aotr_path) != "1397421866":
 #     raise FileNotFoundError(r"you need to place the file in Aotr directory: Steam\steamapps\workshop\content\32470\1397421866\")
 
 xml_folder = os.path.join(aotr_path, r"Data\XML")
+backup_folder = xml_folder + r"\backup_xml_build_time_weeks"
+if not os.path.exists(backup_folder):
+    os.mkdir(backup_folder)
 for xml in files:
-    xml_file = os.path.join(xml_folder, xml)
+    xml_file_path = os.path.join(xml_folder, xml)
     
     # Print the constructed file path for debugging
-    print(f"Processing file: {xml_file}")
+    print(f"Processing file: {xml_file_path}")
     
     # Check if file exists
-    if not os.path.isfile(xml_file):
-        print(f"File not found: {xml_file}")
+    if not os.path.isfile(xml_file_path):
+        print(f"File not found: {xml_file_path}")
         continue
     
     try:
-        tree = ET.parse(xml_file)
+        tree = ET.parse(xml_file_path)
         root = tree.getroot()
-
+        backup_file = os.path.join(backup_folder, xml)
+        if not os.path.isfile(backup_file):
+            tree.write(backup_file)
         for child in root:
             name_attrib = child.attrib.get('Name', "")
             if '_Dummy' not in name_attrib and '_Death_Clone' not in name_attrib:
@@ -78,9 +82,10 @@ for xml in files:
                     if enc_element is not None and enc_element.text:
                         # Split the text into lines
                         lines = enc_element.text.splitlines()
-                        lines.pop()
+                        if lines[-1].isspace():
+                            lines.pop()
                         # Check if the last line contains BLACKBURN_BUILD_TIME_WEEKS and remove it if it does
-                        if lines and 'BLACKBURN_BUILD_TIME_WEEKS' in lines[-1]:
+                        if "BLACKBURN_BUILD_TIME_WEEKS" in lines[-1]:
                             lines.pop()
                         # Join the filtered lines back into a single string
                         lines.append(f"\t\t\tBLACKBURN_BUILD_TIME_WEEKS_{rounded_weeks}\n\t\t")
@@ -88,9 +93,11 @@ for xml in files:
 
 
         
-        tree.write(xml_file)
+        tree.write(xml_file_path)
     except ET.ParseError as e:
-        print(f"Error parsing file {xml_file}: {e}")
+        print(f"Error parsing file {xml_file_path}: {e}")
     except Exception as e:
-        print(f"Error processing file {xml_file}: {e}")
+        print(f"Error processing file {xml_file_path}: {e}")
 
+print("Press ENTER")
+input()
