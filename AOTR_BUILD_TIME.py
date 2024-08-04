@@ -39,6 +39,7 @@ def main():
     'STARBASES.XML',
     'STARBASES_SHARED.XML',
     ]
+
     start_time = time.time()
     xml_folder = os.path.join(get_aotr_path(), r"Data\XML")
     for file in files:
@@ -176,7 +177,7 @@ def create_localisation_dict(key_set):
         # Extract the numeric part from the key
         numeric_part = key.split('_')[-1]
         # Form the corresponding value
-        value = f"Build time in weeks: {numeric_part}"
+        value = f"BUILD TIME IN WEEKS: {numeric_part}"
         # Add the key-value pair to the dictionary
         data_dict[key] = value
     return data_dict
@@ -233,3 +234,7 @@ if __name__ == "__main__":
 #3 доп функции как минимум - с пайтестом
 #отдельный документ с  перечислением используемых библиотек
 
+#загвоздка в теге энциклопедии и теге времени строительства
+#к примеру у стар дестроера3 нет энциклопедии но есть время строительства
+#у E_Dreadnaught_Cruiser и E_Preybird_S - есть энциклопедия но нет время строительства
+# и у всех у них есть тег  Variant_Of_Existing_Type - т.е. если этого тега нет, значит 100% все будет нормально
