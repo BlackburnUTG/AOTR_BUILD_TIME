@@ -5,6 +5,7 @@ import time
 import re
 from copy import deepcopy
 import sys
+import copy
 
 RED = "\033[91m"
 GREEN = "\033[92m"
@@ -47,10 +48,10 @@ allowed_root_tags_global = [
     'SpaceUnitsFreighters',
     'SpaceUnitsFrigates',
     'SpaceUnitsSupers',
+    'SpecialStructures',
     'specialstructures_empire_files',
-    'SpecialStructures',
+    'Specialstructures_GroundMinor',
     'specialstructures_rebel_files',
-    'SpecialStructures',
     'Squadrons',
     'StarBases',
     'Template_Data',
@@ -73,6 +74,7 @@ def main():
     aproved_xml_list, units_dic = aprove_xml_and_create_units_dic(xml_list)
     make_btw(units_dic)
     write_btw(units_dic, aproved_xml_list)
+    
     print(f'{GREEN}Done, no errors{RESET}')
     
     end_time = time.time()
@@ -155,21 +157,65 @@ def aprove_xml_and_create_units_dic(xml_list):
 
 def make_btw(units_dic):
     for unit in units_dic.values():
-        if (encyclopedia := unit.find('Encyclopedia_Text')) == None: 
+        #if Build_Time_Seconds and no encyclopedia
+        if (encyclopedia := unit.find('Encyclopedia_Text')) == None:
+            if (bts := unit.find('Build_Time_Seconds')) == None: 
+                continue
+            if (unit_tag_variant := unit.find('Variant_Of_Existing_Type')) == None:
+                continue
+            variant_name = unit_tag_variant.text.strip()
+            variant_encyclopedia = get_encyclopedia_from_variant(units_dic, variant_name)
+            if variant_encyclopedia == False or variant_encyclopedia == None :
+                continue
+            encyclopedia = copy.deepcopy(variant_encyclopedia)
+            btw = convert_bts_to_btw(bts)
+            if btw == False:
+                continue
+            add_btw_to_encyclopedia(encyclopedia, btw)
+            encyclopedia_tag = ET.Element("Encyclopedia_Text")
+            encyclopedia_tag.text = encyclopedia.text
+            unit.append(encyclopedia_tag)
             continue
+
+        #if encyclopedia and Build_Time_Seconds
         if (bts := unit.find('Build_Time_Seconds')) != None:
             btw = convert_bts_to_btw(bts)
-            add_btw_to_encyclopedia(encyclopedia, btw) 
+            if btw == False:
+                continue            
+            add_btw_to_encyclopedia(encyclopedia, btw)
+
+        #if encyclopedia     
         elif (unit_tag_variant := unit.find('Variant_Of_Existing_Type')) == None:
             continue
         else:
             variant_name = unit_tag_variant.text.strip()
             bts = get_bts_from_variant(units_dic, variant_name, unit)
-            if bts == False:
+            if bts == False or bts == None:
                 continue
             btw = convert_bts_to_btw(bts)
+            if btw == False:
+                continue            
             add_btw_to_encyclopedia(encyclopedia, btw)
-            pass             
+                         
+
+
+def get_encyclopedia_from_variant(units_dic, variant_name):
+    try:
+        unit = units_dic[variant_name]
+    except Exception as e:
+        print(f"{RED} Error: {e}\n No such key in dic: {variant_name} {RESET}")
+        sys.exit()
+    
+    if (encyclopedia := unit.find('Encyclopedia_Text')) == None:
+            unit_tag_variant = unit.find('Variant_Of_Existing_Type')
+            if unit_tag_variant == None:
+                print(f"{variant_name} has no variant")
+                return False
+            get_encyclopedia_from_variant(units_dic, unit_tag_variant.text.strip())
+    else:
+        return encyclopedia   
+
+
 
 
 def get_bts_from_variant(units_dic, variant_name, unit):
@@ -185,7 +231,6 @@ def get_bts_from_variant(units_dic, variant_name, unit):
             if unit_tag_variant == None:
                 print(f"{variant_name} has no variant")
                 return False
-            
             get_bts_from_variant(units_dic, unit_tag_variant.text.strip(), unit)
         else:
             return bts
@@ -196,7 +241,9 @@ def get_bts_from_variant(units_dic, variant_name, unit):
 
 
 def add_btw_to_encyclopedia(encyclopedia, btw):
-        # Split the text into lines
+    if btw == False:
+        pass
+    # Split the text into lines
     try:    
         lines = encyclopedia.text.splitlines()
     except AttributeError:
@@ -219,13 +266,15 @@ def add_btw_to_encyclopedia(encyclopedia, btw):
     encyclopedia.text = "\n".join(lines)
 
 
-def convert_bts_to_btw(element):
+def convert_bts_to_btw(bts_element):
     try:
-        seconds = float(element.text)
+        seconds = float(bts_element.text)
     except ValueError: 
         print(f"{RED}ERROR! Build_Time_Seconds is not a number{RESET}")
         return False
     except AttributeError:
+        return False
+    if seconds == float(0):
         return False
     # Calculate the number of weeks, adjusting and applying the ceiling to half-week precision
     rounded_weeks = math.ceil((seconds / 45) * 2 - 0.5) / 2
@@ -278,5 +327,5 @@ if __name__ == "__main__":
 
 
 
-#в тегах со строками могут встречаться лишние пробелы - надо убрать
-#загвостка если у юнита есть свое время строительства, но нет своей энциклопедии. как у ISD3
+#вроде все. осталось почистить всякие лишние иф элсы
+#идея для следующей проги: major hero для юнитов
