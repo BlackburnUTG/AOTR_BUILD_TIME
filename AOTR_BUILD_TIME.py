@@ -19,11 +19,11 @@ aotr_speed_bonus_bug_global = 0.8
 #BTS DIC FOR TEXT.FILE
 btiw_set_global = set()
 
+#FighterUnits - откуда это, такого нет
 allowed_root_tags_global = [
     'Containers',
     'EmpireGroundCompanies',
     'FighterUnits',
-    'GenericHeroUnits',
     'GenericHeroUnits',
     'GroundInfantry_Units',
     'GroundUnits',
@@ -33,17 +33,22 @@ allowed_root_tags_global = [
     'Indigenous_Units',
     'RebelGroundCompanies',
     'SpaceCorvettes',
+    'SPACEUNITSCORVETTES_CW',
     'SpaceUnitsCapital',
     'SpaceUnitsCruisers',
+    'SPACEUNITSCRUISERS_CW',
     'SpaceUnitsFreighters',
     'SpaceUnitsFrigates',
+    'SPACEUNITSFRIGATES_CW',
     'SpaceUnitsSupers',
+    'SPACEUNITSSUPERS_CW',
     'SpecialStructures',
     'specialstructures_empire_files',
     'Specialstructures_GroundMinor',
     'specialstructures_rebel_files',
     'Squadrons',
     'StarBases',
+    'STARBASES_CW',
     'Template_Data',
     'Templates_Space',
     'Templates_Ground',
@@ -203,18 +208,24 @@ def get_encyclopedia_from_variant(units_dic, variant_name):
         unit = units_dic[variant_name]
     except Exception as e:
         print(f"{RED} Error: {e}\n No such key in dic: {variant_name} {RESET}")
-        sys.exit()
+        #sys.exit()
+        return None
     
     if (encyclopedia := unit.find('Encyclopedia_Text')) == None:
-            unit_tag_variant = unit.find('Variant_Of_Existing_Type')
+            unit_tag_variant = check_if_unit_tag_variant_is_not_none(unit, variant_name)
             if unit_tag_variant == None:
-                print(f"{variant_name} has no variant")
                 return None
             get_encyclopedia_from_variant(units_dic, unit_tag_variant.text.strip())
     else:
         return encyclopedia   
 
 
+def check_if_unit_tag_variant_is_not_none(unit, variant_name):
+    unit_tag_variant = unit.find('Variant_Of_Existing_Type')
+    if unit_tag_variant == None:
+        print(f"{variant_name} has no variant")
+        return None
+    return unit_tag_variant
 
 
 def get_bts_from_variant(units_dic, variant_name, unit):
@@ -222,9 +233,8 @@ def get_bts_from_variant(units_dic, variant_name, unit):
         unit = units_dic[variant_name]
 
         if (bts := unit.find('Build_Time_Seconds')) == None:
-            unit_tag_variant = unit.find('Variant_Of_Existing_Type')
+            unit_tag_variant = check_if_unit_tag_variant_is_not_none(unit, variant_name)
             if unit_tag_variant == None:
-                print(f"{variant_name} has no variant")
                 return None
             get_bts_from_variant(units_dic, unit_tag_variant.text.strip(), unit)
         else:
@@ -232,7 +242,8 @@ def get_bts_from_variant(units_dic, variant_name, unit):
     
     except Exception as e:
         print(f"{RED} Error: {e}\n No such key in dic: {variant_name} {RESET}")
-        sys.exit()
+        #sys.exit()
+        return None
 
 
 def add_btw_to_encyclopedia(encyclopedia, btw):
@@ -369,4 +380,4 @@ if __name__ == "__main__":
 #надо научить прогу пропускать изменения файлов есть там уже есть блекберн викс
 #или не надо. ибо я просто срезаю блекберн если он есть в add_btw_to_encyclopedia
 #идея для следующей проги: major hero для юнитов
-
+# в def get_aotr_path() надо снять коменты как будет готово
